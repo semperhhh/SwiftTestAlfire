@@ -13,17 +13,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.view.backgroundColor = UIColor.systemYellow;
+        self.view.backgroundColor = UIColor.systemYellow
+        
+        let navi = UINavigationController(rootViewController: self)
+        UIApplication.shared.windows.first?.rootViewController = navi
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let vc = UIViewController()
-        vc.view.backgroundColor = UIColor.systemRed;
-//        self.navigationController?.pushViewController(vc, animated: true)
-//        self.present(vc, animated: true, completion: nil)
-//        self.show(vc, sender: nil)
-//        self.showDetailViewController(vc, sender: nil)
         
+        let vc = SecondViewController()
+        vc.modalPresentationStyle = .fullScreen
+        vc.title = """
+second
+"""
+        self.show(vc, sender: nil)
     }
 }
 

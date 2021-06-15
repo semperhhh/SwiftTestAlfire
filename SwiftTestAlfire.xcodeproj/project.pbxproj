@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,9 +16,11 @@
 		DA6F36D42675A657005B0F93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6F36D22675A657005B0F93 /* Main.storyboard */; };
 		DA6F36D62675A658005B0F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA6F36D52675A658005B0F93 /* Assets.xcassets */; };
 		DA6F36D92675A658005B0F93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6F36D72675A658005B0F93 /* LaunchScreen.storyboard */; };
-		DA6F36E42675A658005B0F93 /* SwiftTestAlfireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F36E32675A658005B0F93 /* SwiftTestAlfireTests.swift */; };
-		DA6F36EF2675A659005B0F93 /* SwiftTestAlfireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F36EE2675A659005B0F93 /* SwiftTestAlfireUITests.swift */; };
 		DA6F37282675DA96005B0F93 /* AppRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F37272675DA96005B0F93 /* AppRouting.swift */; };
+		E47E2E8826783B2E00636A06 /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47E2E8726783B2E00636A06 /* AppNavigation.swift */; };
+		E47E2E8A26783BE600636A06 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47E2E8926783BE600636A06 /* SecondViewController.swift */; };
+		E47E2E8C2678456C00636A06 /* SecondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47E2E8B2678456C00636A06 /* SecondModel.swift */; };
+		E47E2E8F267851BE00636A06 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47E2E8E267851BE00636A06 /* Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,13 +58,13 @@
 		DA6F36D82675A658005B0F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA6F36DA2675A658005B0F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA6F36DF2675A658005B0F93 /* SwiftTestAlfireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTestAlfireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA6F36E32675A658005B0F93 /* SwiftTestAlfireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestAlfireTests.swift; sourceTree = "<group>"; };
-		DA6F36E52675A658005B0F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA6F36EA2675A659005B0F93 /* SwiftTestAlfireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTestAlfireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA6F36EE2675A659005B0F93 /* SwiftTestAlfireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestAlfireUITests.swift; sourceTree = "<group>"; };
-		DA6F36F02675A659005B0F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA6F37272675DA96005B0F93 /* AppRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouting.swift; sourceTree = "<group>"; };
 		DF1AFFDE791BB7354F36D4C8 /* Pods-SwiftTestAlfire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTestAlfire.debug.xcconfig"; path = "Target Support Files/Pods-SwiftTestAlfire/Pods-SwiftTestAlfire.debug.xcconfig"; sourceTree = "<group>"; };
+		E47E2E8726783B2E00636A06 /* AppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
+		E47E2E8926783BE600636A06 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E47E2E8B2678456C00636A06 /* SecondModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondModel.swift; sourceTree = "<group>"; };
+		E47E2E8E267851BE00636A06 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				DA6F36CB2675A657005B0F93 /* SwiftTestAlfire */,
-				DA6F36E22675A658005B0F93 /* SwiftTestAlfireTests */,
-				DA6F36ED2675A659005B0F93 /* SwiftTestAlfireUITests */,
 				DA6F36CA2675A657005B0F93 /* Products */,
 				F5247D27CCD719A671E2FABA /* Pods */,
 				A4C841BDF07B0A7A47114D73 /* Frameworks */,
@@ -128,6 +128,8 @@
 		DA6F36CB2675A657005B0F93 /* SwiftTestAlfire */ = {
 			isa = PBXGroup;
 			children = (
+				E47E2E8D267845E600636A06 /* Second */,
+				E47E2E862678394A00636A06 /* Networking */,
 				DA6F372C2675DB10005B0F93 /* Routing */,
 				DA6F36CC2675A657005B0F93 /* AppDelegate.swift */,
 				DA6F36CE2675A657005B0F93 /* SceneDelegate.swift */,
@@ -140,30 +142,30 @@
 			path = SwiftTestAlfire;
 			sourceTree = "<group>";
 		};
-		DA6F36E22675A658005B0F93 /* SwiftTestAlfireTests */ = {
-			isa = PBXGroup;
-			children = (
-				DA6F36E32675A658005B0F93 /* SwiftTestAlfireTests.swift */,
-				DA6F36E52675A658005B0F93 /* Info.plist */,
-			);
-			path = SwiftTestAlfireTests;
-			sourceTree = "<group>";
-		};
-		DA6F36ED2675A659005B0F93 /* SwiftTestAlfireUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DA6F36EE2675A659005B0F93 /* SwiftTestAlfireUITests.swift */,
-				DA6F36F02675A659005B0F93 /* Info.plist */,
-			);
-			path = SwiftTestAlfireUITests;
-			sourceTree = "<group>";
-		};
 		DA6F372C2675DB10005B0F93 /* Routing */ = {
 			isa = PBXGroup;
 			children = (
 				DA6F37272675DA96005B0F93 /* AppRouting.swift */,
+				E47E2E8726783B2E00636A06 /* AppNavigation.swift */,
 			);
 			path = Routing;
+			sourceTree = "<group>";
+		};
+		E47E2E862678394A00636A06 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E47E2E8E267851BE00636A06 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E47E2E8D267845E600636A06 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				E47E2E8926783BE600636A06 /* SecondViewController.swift */,
+				E47E2E8B2678456C00636A06 /* SecondModel.swift */,
+			);
+			path = Second;
 			sourceTree = "<group>";
 		};
 		F5247D27CCD719A671E2FABA /* Pods */ = {
@@ -176,7 +178,6 @@
 				3941B0B56E4556733A030F6A /* Pods-SwiftTestAlfireTests.debug.xcconfig */,
 				78A720AC4789018595595EC6 /* Pods-SwiftTestAlfireTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -418,8 +419,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E47E2E8A26783BE600636A06 /* SecondViewController.swift in Sources */,
 				DA6F37282675DA96005B0F93 /* AppRouting.swift in Sources */,
 				DA6F36D12675A657005B0F93 /* ViewController.swift in Sources */,
+				E47E2E8F267851BE00636A06 /* Networking.swift in Sources */,
+				E47E2E8826783B2E00636A06 /* AppNavigation.swift in Sources */,
+				E47E2E8C2678456C00636A06 /* SecondModel.swift in Sources */,
 				DA6F36CD2675A657005B0F93 /* AppDelegate.swift in Sources */,
 				DA6F36CF2675A657005B0F93 /* SceneDelegate.swift in Sources */,
 			);
@@ -429,7 +434,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA6F36E42675A658005B0F93 /* SwiftTestAlfireTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +441,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA6F36EF2675A659005B0F93 /* SwiftTestAlfireUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +599,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DF1AFFDE791BB7354F36D4C8 /* Pods-SwiftTestAlfire.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -615,6 +619,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B8462378E2D551477AC35B9 /* Pods-SwiftTestAlfire.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
