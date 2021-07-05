@@ -11,9 +11,13 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let router = AppRouter.shared
+        router.register(path: "Second", navigator: SecondNavigating())
+        router.register(path: "Music", navigator: MusicNavigating())
         return true
     }
 

@@ -1,0 +1,6 @@
+framework module ZPHSuppleKit {
+  umbrella header "ZPHSuppleKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

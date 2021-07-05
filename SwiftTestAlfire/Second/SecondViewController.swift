@@ -6,7 +6,12 @@
 //
 
 import UIKit
-import SnapKit
+
+struct SecondNavigating: Navigating {
+    func navigate(from viewController: UIViewController, using transitionType: TransitionType, parameters: [String : String]) {
+        navigate(to: SecondViewController(), from: viewController, using: transitionType)
+    }
+}
 
 class SecondViewController: UIViewController {
     

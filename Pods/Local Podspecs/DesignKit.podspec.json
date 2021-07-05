@@ -1,0 +1,24 @@
+{
+  "name": "DesignKit",
+  "version": "0.0.1",
+  "summary": "design test",
+  "description": "design test description.",
+  "homepage": "https://github.com/semperhhh/DesignKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zphui5409@163.com": "zphui5409@163.com"
+  },
+  "source": {
+    "git": ".",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "swift_versions": "5.3",
+  "source_files": "src/**/*",
+  "swift_version": "5.3"
+}
