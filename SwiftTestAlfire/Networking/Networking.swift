@@ -13,8 +13,10 @@ public let Network = Networking.shared
 open class Networking {
     
     static let shared = Networking()
+
+    var responseClosure: ((_ isSuccess: Bool) -> Void)?
     
-    func request<Parameters: Encodable>(_ convertible: URLConvertible, method: HTTPMethod = .get, parameters: Parameters? = nil) {
+    func request<Parameters: Encodable>(_ convertible: URLConvertible, method: HTTPMethod = .get, parameters: Parameters? = nil) -> Self {
         
         AF.request(convertible, method: method, parameters: parameters).responseData { data in
             if data.response?.statusCode == 200 {
@@ -29,7 +31,15 @@ open class Networking {
             } catch {
                 print("faild")
             }
-        
+            
+            if (self.responseClosure != nil) {
+                self.responseClosure!(true)
+            }
         }
+        return self
+    }
+    
+    func responseJSON(closure: @escaping (_ isSuccess: Bool) -> Void) {
+        self.responseClosure = closure
     }
 }

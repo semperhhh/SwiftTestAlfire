@@ -29,7 +29,9 @@ class SecondViewController: UIViewController {
         }
         
         // 网络请求
-        Network.request("https://router-test.gamersky.com/@/lists/getListElements/6.0.0", method: .post, parameters: ["listName": "影视列表"])
+        Network.request("https://router-test.gamersky.com/@/lists/getListElements/6.0.0", method: .post, parameters: ["listName": "影视列表"]).responseJSON { (isSuccess) in
+            print(isSuccess)
+        }
 
 //        if let jsonDict = json.value as? [String: Any], let array = jsonDict["listElements"] as? [[String: Any]] {
 //

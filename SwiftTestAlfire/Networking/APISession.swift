@@ -47,9 +47,10 @@ private extension APISession {
         let request = AF.request(url, method: method, parameters: parameters, encoding: encoding, headers: allHeader, interceptor: nil, requestModifier: nil)
             .validate()
             .responseJSON { (response) in
-                return
+                
+                
             }
         
-        return 
+        return "" as! Self.ReponseType
     }
 }
