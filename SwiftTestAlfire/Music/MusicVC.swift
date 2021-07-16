@@ -25,6 +25,11 @@ class MusicVC: UIViewController {
         tableview.snp.makeConstraints { (m) in
             m.edges.equalTo(self.view)
         }
+        
+        MusicData().request { list in
+            self.dataList = list
+            self.tableview.reloadData()
+        }
     }
     
     // MARK: lazy
@@ -38,11 +43,13 @@ class MusicVC: UIViewController {
         v.register(MusicTableViewCell.self, forCellReuseIdentifier: "cell")
         return v
     }()
+    
+    var dataList: [MusicModel] = []
 }
 
 extension MusicVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        dataList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

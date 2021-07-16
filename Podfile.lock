@@ -1,6 +1,8 @@
 PODS:
   - Alamofire (5.4.0)
   - DesignKit (0.0.1)
+  - HandyJSON (5.0.3-beta)
+  - MJRefresh (3.7.2)
   - RxCocoa (6.2.0):
     - RxRelay (= 6.2.0)
     - RxSwift (= 6.2.0)
@@ -9,25 +11,32 @@ PODS:
   - RxSwift (6.2.0)
   - SnapKit (5.0.1)
   - SwiftLint (0.43.1)
+  - SwiftyJSON (5.0.1)
   - ZPHSuppleKit (0.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.4)
   - DesignKit (from `./Frameworks/DesignKit`)
+  - HandyJSON (~> 5.0.3-beta)
+  - MJRefresh (~> 3.7.2)
   - RxCocoa (= 6.2.0)
   - RxSwift (= 6.2.0)
   - SnapKit (~> 5.0.0)
   - SwiftLint (= 0.43.1)
+  - SwiftyJSON (~> 5.0.1)
   - ZPHSuppleKit (from `./Frameworks/ZPHSuppleKit`)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - HandyJSON
+    - MJRefresh
     - RxCocoa
     - RxRelay
     - RxSwift
     - SnapKit
     - SwiftLint
+    - SwiftyJSON
 
 EXTERNAL SOURCES:
   DesignKit:
@@ -38,13 +47,16 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
   DesignKit: ebd7bfac9e8e22ebd1280c333c3dda22afffcbd5
+  HandyJSON: 88e8ea5f66ab65c3b8768499a1935d0509c460d4
+  MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   ZPHSuppleKit: 14510569bbab5653fbb1098c0f34ea3f04c7db08
 
-PODFILE CHECKSUM: eeebc3a78e502be1430bebba421b477fa1a3b824
+PODFILE CHECKSUM: e85e280ec2f306589fd2bf6b428b6e816c0ca99b
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1

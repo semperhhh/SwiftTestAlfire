@@ -8,5 +8,5 @@
 import Foundation
 
 enum API {
-    static let baseURL = URL(string: "http://baidu.com")!
+    static let baseURL = URL(string: "https://router-test.gamersky.com")!
 }

@@ -11,6 +11,9 @@ target 'SwiftTestAlfire' do
   pod 'SwiftLint', '0.43.1', configurations: ['Debug']
   pod 'RxSwift', '6.2.0'
   pod 'RxCocoa', '6.2.0'
+  pod 'MJRefresh', '~> 3.7.2'
+  pod 'SwiftyJSON', '~> 5.0.1'
+  pod 'HandyJSON', '~> 5.0.3-beta'
   
   #  local
   pod 'DesignKit', :path => './Frameworks/DesignKit', :inhibit_warnings => false

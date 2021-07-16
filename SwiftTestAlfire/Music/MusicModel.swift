@@ -7,8 +7,16 @@
 
 import UIKit
 
-struct MusicModel {
+struct MusicModel :SwiftyJsonModelProtocol {
+    init(_ json: [String: Any]) {
+        
+        self.name = "MusicModel"
+        self.image = "123"
+        self.contentUrl = "contentUrl"
+    }
+    
     var name: String = ""
     var image: String = ""
     var contentUrl: String = ""
+    
 }

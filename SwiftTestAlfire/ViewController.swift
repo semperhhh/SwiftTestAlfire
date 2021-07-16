@@ -24,8 +24,8 @@ class ViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 
-        AppRouter.shared.route(to: URL(string: "https://SwiftTestAlfire.com/Second"), from: self, using: .show)
-//        AppRouter.shared.route(to: URL(string: "https://SwiftTestAlfire.com/Music"), from: self, using: .show)
+//        AppRouter.shared.route(to: URL(string: "https://SwiftTestAlfire.com/Second"), from: self, using: .show)
+        AppRouter.shared.route(to: URL(string: "https://SwiftTestAlfire.com/Music"), from: self, using: .show)
     }
 }
 

@@ -31,6 +31,7 @@
 		E47E2E8A26783BE600636A06 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47E2E8926783BE600636A06 /* SecondViewController.swift */; };
 		E47E2E8C2678456C00636A06 /* SecondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47E2E8B2678456C00636A06 /* SecondModel.swift */; };
 		E47E2E8F267851BE00636A06 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47E2E8E267851BE00636A06 /* Networking.swift */; };
+		E497000026A139B2006F9425 /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E497FFFF26A139B2006F9425 /* MusicData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		E47E2E8926783BE600636A06 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E47E2E8B2678456C00636A06 /* SecondModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondModel.swift; sourceTree = "<group>"; };
 		E47E2E8E267851BE00636A06 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		E497FFFF26A139B2006F9425 /* MusicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				DA44A892268A0E8C000CB1D5 /* MusicVC.swift */,
 				DA44A897268A0F64000CB1D5 /* MusicModel.swift */,
 				DA44A89C268A1188000CB1D5 /* MusicTableViewCell.swift */,
+				E497FFFF26A139B2006F9425 /* MusicData.swift */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E497000026A139B2006F9425 /* MusicData.swift in Sources */,
 				DA44A893268A0E8C000CB1D5 /* MusicVC.swift in Sources */,
 				DA46371B26934D3900C565E6 /* APISession.swift in Sources */,
 				DA44A898268A0F64000CB1D5 /* MusicModel.swift in Sources */,
