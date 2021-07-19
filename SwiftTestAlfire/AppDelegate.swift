@@ -15,9 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        UITableView().swizzle()
+        
         let router = AppRouter.shared
         router.register(path: "Second", navigator: SecondNavigating())
         router.register(path: "Music", navigator: MusicNavigating())
+        router.register(path: "Movie", navigator: MovieNavigating())
         return true
     }
 

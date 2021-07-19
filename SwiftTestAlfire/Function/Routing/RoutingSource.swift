@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 /// 空协议,让路由和viewcontroller解耦
-protocol RoutingSource: class {
+protocol RoutingSource {
     
 }
 

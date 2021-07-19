@@ -27,18 +27,6 @@ class SecondViewController: UIViewController {
         self.tableview.snp.makeConstraints { m in
             m.edges.equalToSuperview()
         }
-        
-        // 网络请求
-        Network.request("https://router-test.gamersky.com/@/lists/getListElements/6.0.0", method: .post, parameters: ["listName": "影视列表"]).responseJSON { (isSuccess) in
-            print(isSuccess)
-        }
-
-//        if let jsonDict = json.value as? [String: Any], let array = jsonDict["listElements"] as? [[String: Any]] {
-//
-//            for dict in array {
-//                let model = SecondModel(title: dict["title"] as! String)
-//            }
-//        }
     }
     
     lazy var tableview: UITableView = {

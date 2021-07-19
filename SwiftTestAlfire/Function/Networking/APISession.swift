@@ -10,7 +10,7 @@ import Alamofire
 
 /// swiftyJson解析的模型要遵守
 protocol SwiftyJsonModelProtocol {
-    init(_ json: [String: Any])
+    init(_ json: JSON)
 }
 
 protocol APISession {
@@ -62,11 +62,11 @@ private extension APISession {
                 switch json.response?.statusCode {
                 case 200:
                     print("success")
-                    let m = ReponseType(json.value as! [String: Any])
+                    let m = ReponseType(SwiftyJSON.JSON(json.data as Any))
                     closure(m)
                 default:
                     print("error")
-                    let m = ReponseType(json.value as! [String: Any])
+                    let m = ReponseType(SwiftyJSON.JSON(json.data as Any))
                     closure(m)
                 }
             }

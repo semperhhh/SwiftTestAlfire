@@ -14,6 +14,7 @@ target 'SwiftTestAlfire' do
   pod 'MJRefresh', '~> 3.7.2'
   pod 'SwiftyJSON', '~> 5.0.1'
   pod 'HandyJSON', '~> 5.0.3-beta'
+  pod 'Kingfisher', '~> 6.0'
   
   #  local
   pod 'DesignKit', :path => './Frameworks/DesignKit', :inhibit_warnings => false

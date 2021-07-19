@@ -2,6 +2,7 @@ PODS:
   - Alamofire (5.4.0)
   - DesignKit (0.0.1)
   - HandyJSON (5.0.3-beta)
+  - Kingfisher (6.3.0)
   - MJRefresh (3.7.2)
   - RxCocoa (6.2.0):
     - RxRelay (= 6.2.0)
@@ -18,6 +19,7 @@ DEPENDENCIES:
   - Alamofire (~> 5.4)
   - DesignKit (from `./Frameworks/DesignKit`)
   - HandyJSON (~> 5.0.3-beta)
+  - Kingfisher (~> 6.0)
   - MJRefresh (~> 3.7.2)
   - RxCocoa (= 6.2.0)
   - RxSwift (= 6.2.0)
@@ -30,6 +32,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - HandyJSON
+    - Kingfisher
     - MJRefresh
     - RxCocoa
     - RxRelay
@@ -48,6 +51,7 @@ SPEC CHECKSUMS:
   Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
   DesignKit: ebd7bfac9e8e22ebd1280c333c3dda22afffcbd5
   HandyJSON: 88e8ea5f66ab65c3b8768499a1935d0509c460d4
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
@@ -57,6 +61,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   ZPHSuppleKit: 14510569bbab5653fbb1098c0f34ea3f04c7db08
 
-PODFILE CHECKSUM: e85e280ec2f306589fd2bf6b428b6e816c0ca99b
+PODFILE CHECKSUM: 3be2f61ab60c1c29fcb901a34eb6b65e9527d54c
 
 COCOAPODS: 1.10.1
