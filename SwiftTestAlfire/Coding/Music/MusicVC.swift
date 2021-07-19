@@ -14,7 +14,7 @@ struct MusicNavigating: Navigating {
 }
 
 
-class MusicVC: BasicTableViewController {
+class MusicVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,16 +22,16 @@ class MusicVC: BasicTableViewController {
         // Do any additional setup after loading the view.
         
         self.title = "music"
-        
-        tableview.register(MusicTableViewCell.self, forCellReuseIdentifier: "cell")
-        tableview.snp.makeConstraints { (m) in
-            m.edges.equalTo(self.view)
+        collectionView.register(MusicCollectionViewCell.self, forCellWithReuseIdentifier: "item")
+        self.view.addSubview(collectionView)
+        collectionView.snp.makeConstraints { (m) in
+            m.edges.equalToSuperview()
         }
-        tableview.mj_header?.beginRefreshing()
+        self.requestData()
     }
     
     // MARK: lazy
-    override func requestData() {
+    func requestData() {
         
 //        MusicData().request { list in
 //            self.dataList = list
@@ -40,24 +40,38 @@ class MusicVC: BasicTableViewController {
 
         MusicData().requestLocal { list in
             self.dataList = list
-            self.tableview.reloadData()
-            self.endRefreshing()
+            self.collectionView.reloadData()
         }
     }
+    
+    lazy var collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        let v = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+        v.backgroundColor = .white
+        v.dataSource = self
+        v.delegate = self
+        return v
+    }()
+    
+    var dataList: [MusicModel] = []
 }
 
-extension MusicVC {
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension MusicVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         dataList.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MusicTableViewCell
-        cell.model = dataList[indexPath.row] as? MusicModel
-        return cell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let item = collectionView.dequeueReusableCell(withReuseIdentifier: "item", for: indexPath) as! MusicCollectionViewCell
+        item.model = dataList[indexPath.row]
+        return item
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: UIScreen.main.bounds.width / 3.0, height: UIScreen.main.bounds.width / 3.0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        0
     }
 }

@@ -12,9 +12,13 @@
 		D487454DEB56FEE202402157 /* Pods_SwiftTestAlfire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FEBEF18D7E99EB2AFF95EE /* Pods_SwiftTestAlfire.framework */; };
 		DA44A893268A0E8C000CB1D5 /* MusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44A892268A0E8C000CB1D5 /* MusicVC.swift */; };
 		DA44A898268A0F64000CB1D5 /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44A897268A0F64000CB1D5 /* MusicModel.swift */; };
-		DA44A89D268A1188000CB1D5 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44A89C268A1188000CB1D5 /* MusicTableViewCell.swift */; };
+		DA44A89D268A1188000CB1D5 /* MusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44A89C268A1188000CB1D5 /* MusicCollectionViewCell.swift */; };
 		DA46371B26934D3900C565E6 /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA46371A26934D3900C565E6 /* APISession.swift */; };
 		DA46377B269C8AE800C565E6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA46377A269C8AE800C565E6 /* API.swift */; };
+		DA46379F26A5B97E00C565E6 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA46379E26A5B97E00C565E6 /* MovieModel.swift */; };
+		DA4637A426A5BA0400C565E6 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4637A326A5BA0400C565E6 /* MovieTableViewCell.swift */; };
+		DA4637AC26A5BD9500C565E6 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4637AB26A5BD9500C565E6 /* MovieData.swift */; };
+		DA4637B926A5C56A00C565E6 /* movie_result.txt in Resources */ = {isa = PBXBuildFile; fileRef = DA4637B826A5C56A00C565E6 /* movie_result.txt */; };
 		DA6F36CD2675A657005B0F93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F36CC2675A657005B0F93 /* AppDelegate.swift */; };
 		DA6F36CF2675A657005B0F93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F36CE2675A657005B0F93 /* SceneDelegate.swift */; };
 		DA6F36D12675A657005B0F93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F36D02675A657005B0F93 /* ViewController.swift */; };
@@ -32,7 +36,7 @@
 		E4577F8A26A556F40001CC23 /* Refresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577F8926A556F40001CC23 /* Refresher.swift */; };
 		E4577F8E26A568130001CC23 /* BasicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577F8D26A568130001CC23 /* BasicTableViewController.swift */; };
 		E4577F9026A573FA0001CC23 /* PHTableViewEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577F8F26A573FA0001CC23 /* PHTableViewEmpty.swift */; };
-		E4577F9326A57A360001CC23 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577F9226A57A360001CC23 /* MovieViewController.swift */; };
+		E4577F9326A57A360001CC23 /* MovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577F9226A57A360001CC23 /* MovieVC.swift */; };
 		E47E2E8A26783BE600636A06 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47E2E8926783BE600636A06 /* SecondViewController.swift */; };
 		E47E2E8C2678456C00636A06 /* SecondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47E2E8B2678456C00636A06 /* SecondModel.swift */; };
 		E497000026A139B2006F9425 /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E497FFFF26A139B2006F9425 /* MusicData.swift */; };
@@ -66,9 +70,13 @@
 		D1B1F258C5D39EE5D7B55959 /* Pods_SwiftTestAlfire_SwiftTestAlfireUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTestAlfire_SwiftTestAlfireUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA44A892268A0E8C000CB1D5 /* MusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVC.swift; sourceTree = "<group>"; };
 		DA44A897268A0F64000CB1D5 /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
-		DA44A89C268A1188000CB1D5 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		DA44A89C268A1188000CB1D5 /* MusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCollectionViewCell.swift; sourceTree = "<group>"; };
 		DA46371A26934D3900C565E6 /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
 		DA46377A269C8AE800C565E6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		DA46379E26A5B97E00C565E6 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		DA4637A326A5BA0400C565E6 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		DA4637AB26A5BD9500C565E6 /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
+		DA4637B826A5C56A00C565E6 /* movie_result.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = movie_result.txt; sourceTree = "<group>"; };
 		DA6F36C92675A657005B0F93 /* SwiftTestAlfire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTestAlfire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6F36CC2675A657005B0F93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA6F36CE2675A657005B0F93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,7 +99,7 @@
 		E4577F8926A556F40001CC23 /* Refresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refresher.swift; sourceTree = "<group>"; };
 		E4577F8D26A568130001CC23 /* BasicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewController.swift; sourceTree = "<group>"; };
 		E4577F8F26A573FA0001CC23 /* PHTableViewEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHTableViewEmpty.swift; sourceTree = "<group>"; };
-		E4577F9226A57A360001CC23 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		E4577F9226A57A360001CC23 /* MovieVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVC.swift; sourceTree = "<group>"; };
 		E47E2E8926783BE600636A06 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E47E2E8B2678456C00636A06 /* SecondModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondModel.swift; sourceTree = "<group>"; };
 		E497FFFF26A139B2006F9425 /* MusicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicData.swift; sourceTree = "<group>"; };
@@ -140,7 +148,7 @@
 			children = (
 				DA44A892268A0E8C000CB1D5 /* MusicVC.swift */,
 				DA44A897268A0F64000CB1D5 /* MusicModel.swift */,
-				DA44A89C268A1188000CB1D5 /* MusicTableViewCell.swift */,
+				DA44A89C268A1188000CB1D5 /* MusicCollectionViewCell.swift */,
 				E497FFFF26A139B2006F9425 /* MusicData.swift */,
 			);
 			path = Music;
@@ -208,6 +216,7 @@
 		E4577F8526A52C650001CC23 /* LocalData */ = {
 			isa = PBXGroup;
 			children = (
+				DA4637B826A5C56A00C565E6 /* movie_result.txt */,
 				E4577F8626A52C700001CC23 /* music_result.txt */,
 			);
 			path = LocalData;
@@ -233,7 +242,10 @@
 		E4577F9126A57A0B0001CC23 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
-				E4577F9226A57A360001CC23 /* MovieViewController.swift */,
+				E4577F9226A57A360001CC23 /* MovieVC.swift */,
+				DA46379E26A5B97E00C565E6 /* MovieModel.swift */,
+				DA4637A326A5BA0400C565E6 /* MovieTableViewCell.swift */,
+				DA4637AB26A5BD9500C565E6 /* MovieData.swift */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -400,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA6F36D92675A658005B0F93 /* LaunchScreen.storyboard in Resources */,
+				DA4637B926A5C56A00C565E6 /* movie_result.txt in Resources */,
 				E4577F8726A52C700001CC23 /* music_result.txt in Resources */,
 				DA6F36D62675A658005B0F93 /* Assets.xcassets in Resources */,
 				DA6F36D42675A657005B0F93 /* Main.storyboard in Resources */,
@@ -551,16 +564,19 @@
 				E4577F8A26A556F40001CC23 /* Refresher.swift in Sources */,
 				E497000026A139B2006F9425 /* MusicData.swift in Sources */,
 				DA44A893268A0E8C000CB1D5 /* MusicVC.swift in Sources */,
+				DA4637AC26A5BD9500C565E6 /* MovieData.swift in Sources */,
 				DA46371B26934D3900C565E6 /* APISession.swift in Sources */,
 				E4577F9026A573FA0001CC23 /* PHTableViewEmpty.swift in Sources */,
 				DA44A898268A0F64000CB1D5 /* MusicModel.swift in Sources */,
 				E47E2E8A26783BE600636A06 /* SecondViewController.swift in Sources */,
 				DA6F3744267B9FC7005B0F93 /* TransitionType.swift in Sources */,
 				DA6F375E267BA312005B0F93 /* UIAppLicationExtension.swift in Sources */,
-				DA44A89D268A1188000CB1D5 /* MusicTableViewCell.swift in Sources */,
-				E4577F9326A57A360001CC23 /* MovieViewController.swift in Sources */,
+				DA44A89D268A1188000CB1D5 /* MusicCollectionViewCell.swift in Sources */,
+				E4577F9326A57A360001CC23 /* MovieVC.swift in Sources */,
+				DA46379F26A5B97E00C565E6 /* MovieModel.swift in Sources */,
 				DA6F37282675DA96005B0F93 /* AppRouting.swift in Sources */,
 				DA6F36D12675A657005B0F93 /* ViewController.swift in Sources */,
+				DA4637A426A5BA0400C565E6 /* MovieTableViewCell.swift in Sources */,
 				DAB1C7582691622800C885A3 /* HomeVC.swift in Sources */,
 				DA6F3754267BA0DA005B0F93 /* RoutingSource.swift in Sources */,
 				E47E2E8C2678456C00636A06 /* SecondModel.swift in Sources */,
