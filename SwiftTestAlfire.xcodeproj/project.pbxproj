@@ -32,6 +32,7 @@
 		DA6F3759267BA1E5005B0F93 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F3758267BA1E5005B0F93 /* AppRouter.swift */; };
 		DA6F375E267BA312005B0F93 /* UIAppLicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F375D267BA312005B0F93 /* UIAppLicationExtension.swift */; };
 		DAB1C7582691622800C885A3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB1C7572691622800C885A3 /* HomeVC.swift */; };
+		E403F90226A66A3D009C7895 /* HomeTopZoonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E403F90126A66A3D009C7895 /* HomeTopZoonCell.swift */; };
 		E4577F8726A52C700001CC23 /* music_result.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4577F8626A52C700001CC23 /* music_result.txt */; };
 		E4577F8A26A556F40001CC23 /* Refresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577F8926A556F40001CC23 /* Refresher.swift */; };
 		E4577F8E26A568130001CC23 /* BasicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577F8D26A568130001CC23 /* BasicTableViewController.swift */; };
@@ -95,6 +96,7 @@
 		DA6F375D267BA312005B0F93 /* UIAppLicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAppLicationExtension.swift; sourceTree = "<group>"; };
 		DAB1C7572691622800C885A3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DF1AFFDE791BB7354F36D4C8 /* Pods-SwiftTestAlfire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTestAlfire.debug.xcconfig"; path = "Target Support Files/Pods-SwiftTestAlfire/Pods-SwiftTestAlfire.debug.xcconfig"; sourceTree = "<group>"; };
+		E403F90126A66A3D009C7895 /* HomeTopZoonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopZoonCell.swift; sourceTree = "<group>"; };
 		E4577F8626A52C700001CC23 /* music_result.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = music_result.txt; sourceTree = "<group>"; };
 		E4577F8926A556F40001CC23 /* Refresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refresher.swift; sourceTree = "<group>"; };
 		E4577F8D26A568130001CC23 /* BasicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				DAB1C7572691622800C885A3 /* HomeVC.swift */,
+				E403F90126A66A3D009C7895 /* HomeTopZoonCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				DA6F37282675DA96005B0F93 /* AppRouting.swift in Sources */,
 				DA6F36D12675A657005B0F93 /* ViewController.swift in Sources */,
 				DA4637A426A5BA0400C565E6 /* MovieTableViewCell.swift in Sources */,
+				E403F90226A66A3D009C7895 /* HomeTopZoonCell.swift in Sources */,
 				DAB1C7582691622800C885A3 /* HomeVC.swift in Sources */,
 				DA6F3754267BA0DA005B0F93 /* RoutingSource.swift in Sources */,
 				E47E2E8C2678456C00636A06 /* SecondModel.swift in Sources */,

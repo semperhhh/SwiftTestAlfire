@@ -22,6 +22,7 @@ class MovieVC: BasicTableViewController {
         self.title = "movie"
         
         tableview.register(MovieTableViewCell.self, forCellReuseIdentifier: "cell")
+        addRefreshHeader().addRedfreshFooter()
         tableview.snp.makeConstraints { (m) in
             m.edges.equalToSuperview()
         }

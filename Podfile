@@ -15,6 +15,8 @@ target 'SwiftTestAlfire' do
   pod 'SwiftyJSON', '~> 5.0.1'
   pod 'HandyJSON', '~> 5.0.3-beta'
   pod 'Kingfisher', '~> 6.0'
+  # 轮播图
+  pod 'SDCycleScrollView','>= 1.82'
   
   #  local
   pod 'DesignKit', :path => './Frameworks/DesignKit', :inhibit_warnings => false

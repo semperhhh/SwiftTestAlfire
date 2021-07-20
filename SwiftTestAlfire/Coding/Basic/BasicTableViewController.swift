@@ -15,8 +15,19 @@ class BasicTableViewController: UIViewController {
         // Do any additional setup after loading the view.
         tableview.dataSource = self
         tableview.delegate = self
-        tableview.PHDelegate = self
         self.view.addSubview(tableview)
+    }
+    
+    @discardableResult
+    func addRefreshHeader() -> Self {
+        tableview.mj_header = Refresher.headerRefresh(targer: self, action: #selector(headerReloadData))
+        return self
+    }
+    
+    @discardableResult
+    func addRedfreshFooter() -> Self {
+        tableview.mj_footer = Refresher.footerRefresh(targer: self, action: #selector(footerReloadData))
+        return self
     }
     
     @objc func headerReloadData() {
@@ -58,8 +69,6 @@ class BasicTableViewController: UIViewController {
         v.backgroundColor = .white
         v.estimatedRowHeight = 44
         v.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        v.mj_header = Refresher.headerRefresh(targer: self, action: #selector(headerReloadData))
-        v.mj_footer = Refresher.footerRefresh(targer: self, action: #selector(footerReloadData))
         return v
     }()
     
@@ -75,15 +84,12 @@ class BasicTableViewController: UIViewController {
 
 }
 
-extension BasicTableViewController: UITableViewDataSource, UITableViewDelegate, PHTableViewEmptyDelegate {
+extension BasicTableViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         dataList.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         return cell
-    }
-    func tableViewEmpty() -> Int {
-        dataList.count
     }
 }
