@@ -47,7 +47,7 @@ class MusicVC: UIViewController {
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let v = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
-        v.backgroundColor = .white
+        v.backgroundColor = UIColor.designKit.white
         v.dataSource = self
         v.delegate = self
         return v

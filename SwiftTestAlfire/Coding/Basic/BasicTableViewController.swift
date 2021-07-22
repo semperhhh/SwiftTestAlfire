@@ -66,7 +66,7 @@ class BasicTableViewController: UIViewController {
     lazy var tableview: UITableView = {
         let v = UITableView()
         v.separatorStyle = .none
-        v.backgroundColor = .white
+        v.backgroundColor = UIColor.designKit.white
         v.estimatedRowHeight = 44
         v.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         return v

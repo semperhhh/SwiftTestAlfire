@@ -64,7 +64,7 @@ class MovieTableViewCell: UITableViewCell {
         let v = UILabel()
         v.text = "标题"
         v.numberOfLines = 0
-        v.textColor = UIColor.designKit.black
+        v.textColor = UIColor.designKit.color222222
         v.font = UIFont.designKit.title
         return v
     }()
@@ -73,14 +73,14 @@ class MovieTableViewCell: UITableViewCell {
         let v = UILabel()
         v.text = "子标题"
         v.numberOfLines = 0
-        v.textColor = UIColor.designKit.black
+        v.textColor = UIColor.designKit.color222222
         v.font = UIFont.designKit.subTitle
         return v
     }()
     
     private lazy var splitView: UIView = {
         let v = UIView()
-        v.backgroundColor = #colorLiteral(red: 0.9332618117, green: 0.9333737493, blue: 0.9332236052, alpha: 1)
+        v.backgroundColor = UIColor.designKit.EEEEEE
         return v
     }()
     

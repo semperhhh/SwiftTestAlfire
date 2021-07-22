@@ -42,7 +42,6 @@ public extension UIColor {
         
         public static let primary: UIColor = dynamicColor(light: UIColor(hex: 0xFF21C38F), dark: UIColor(hex: 0xFF000000))
         public static let main_app: UIColor = dynamicColor(light: UIColor(hex: 0xFFF5F5F5), dark: UIColor(hex: 0xFF000000))
-        public static let main_text: UIColor = dynamicColor(light: UIColor.black, dark: UIColor.white)
         public static let red: UIColor = UIColor(hex: 0xFFFF4351)
         public static let orange: UIColor = UIColor(hex: 0xFFFEAE1B)
         public static let grey: UIColor = UIColor(hex: 0xFFEEEEEE)
@@ -50,5 +49,20 @@ public extension UIColor {
         public static let green: UIColor = UIColor(hex: 0xFFA5DE37)
         public static let purple: UIColor = UIColor(hex: 0xFF7B72E9)
         public static let black: UIColor = UIColor(hex: 0xFF0c0c0c)
+        
+        /// 一级背景色
+        public static let F5F7F9Background: UIColor = dynamicColor(light: UIColor(hex: 0xFFF5F7F9), dark: UIColor(hex: 0xFF17171A))
+        /// 二级背景色 白色
+        public static let white: UIColor = dynamicColor(light: UIColor(hex: 0xFFFFFFFF), dark: UIColor(hex: 0xFF222226))
+        /// 三级背景色
+        public static let F5F7F9Card: UIColor = dynamicColor(light: UIColor(hex: 0xFFF5F7F9), dark: UIColor(hex: 0xFF2E2E33))
+        /// 分割线颜色
+        public static let EEEEEE: UIColor = dynamicColor(light: UIColor(hex: 0xFFEEEEEE), dark: UIColor(hex: 0xFF323238))
+        /// 一级文字色
+        public static let color222222: UIColor = dynamicColor(light: UIColor(hex: 0xFF222222), dark: UIColor(hex: 0xFFD7D7D9))
+        /// 二级文字色
+        public static let color666666: UIColor = dynamicColor(light: UIColor(hex: 0xFF666666), dark: UIColor(hex: 0xFFA3A3A6))
+        /// 三级文字色
+        public static let color999999: UIColor = dynamicColor(light: UIColor(hex: 0xFF999999), dark: UIColor(hex: 0xFF717173))
     }
 }

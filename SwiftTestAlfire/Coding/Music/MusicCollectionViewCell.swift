@@ -44,7 +44,7 @@ class MusicCollectionViewCell: UICollectionViewCell {
 
     lazy var nameLab: UILabel = {
         let v = UILabel()
-        v.textColor = UIColor.designKit.black
+        v.textColor = UIColor.designKit.color222222
         v.text = "name"
         v.font = UIFont.designKit.subTitle
         v.numberOfLines = 3

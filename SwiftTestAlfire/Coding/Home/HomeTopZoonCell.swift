@@ -17,11 +17,19 @@ class HomeTopZoonCell: UITableViewCell, UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         modelList.count
     }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = collectionView.dequeueReusableCell(withReuseIdentifier: "item", for: indexPath) as! HomeTopZoonItem
         item.model = modelList[indexPath.row]
         return item
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: UIScreen.main.bounds.width / 2, height: 96)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        CGFloat.leastNormalMagnitude
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        CGFloat.leastNormalMagnitude
     }
     
     var modelList: [HomeTopZoonModel] = [] {
@@ -35,7 +43,9 @@ class HomeTopZoonCell: UITableViewCell, UICollectionViewDataSource, UICollection
         
         self.contentView.addSubview(collectionview)
         collectionview.snp.makeConstraints { m in
-            m.edges.equalToSuperview()
+            m.top.left.right.equalToSuperview()
+            m.height.equalTo(96 * 2)
+            m.bottom.equalToSuperview()
         }
     }
     
@@ -43,7 +53,7 @@ class HomeTopZoonCell: UITableViewCell, UICollectionViewDataSource, UICollection
     lazy var collectionview : UICollectionView = {
         let f = UICollectionViewFlowLayout()
         let v = UICollectionView(frame: CGRect.zero, collectionViewLayout: f)
-        v.backgroundColor = .white
+        v.backgroundColor = UIColor.designKit.white
         v.delegate = self
         v.dataSource = self
         v.register(HomeTopZoonItem.self, forCellWithReuseIdentifier: "item")
@@ -82,14 +92,16 @@ class HomeTopZoonItem: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.backgroundColor = .random
+        self.backgroundColor = UIColor.designKit.white
         self.contentView.addSubview(nameLab)
         nameLab.snp.makeConstraints { m in
-            m.edges.equalToSuperview()
+            m.top.left.equalTo(5)
+            m.right.equalTo(-5)
+            m.bottom.equalToSuperview()
         }
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let m = model else {
             return
         }
@@ -99,9 +111,11 @@ class HomeTopZoonItem: UICollectionViewCell {
     // MARK: lazy
     lazy var nameLab: UILabel = {
         let v = UILabel()
-        v.textColor = UIColor.designKit.black
+        v.textColor = UIColor.designKit.color222222
         v.font = UIFont.designKit.title
         v.textAlignment = .center
+        v.backgroundColor = UIColor.designKit.EEEEEE
+        v.asAvatar()
         return v
     }()
     

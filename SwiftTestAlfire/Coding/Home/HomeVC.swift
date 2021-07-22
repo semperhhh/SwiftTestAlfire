@@ -10,8 +10,8 @@ import UIKit
 class HomeVC: BasicTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = .gray
+        self.title = "home"
+        self.view.backgroundColor = UIColor.designKit.F5F7F9Background
         tableview.register(HomeTopZoonCell.self, forCellReuseIdentifier: "topZoon")
         tableview.snp.makeConstraints { m in
             m.edges.equalToSuperview()
@@ -26,7 +26,13 @@ class HomeVC: BasicTableViewController {
         var m2: HomeTopZoonModel = HomeTopZoonModel()
         m2.title = "电影"
         m2.contentUrl = "https://SwiftTestAlfire.com/Movie"
-        return [m1, m2]
+        var m3: HomeTopZoonModel = HomeTopZoonModel()
+        m3.title = "深色模式"
+        m3.contentUrl = "https://SwiftTestAlfire.com/Dark"
+        var m4: HomeTopZoonModel = HomeTopZoonModel()
+        m4.title = "国际化"
+        m4.contentUrl = "https://SwiftTestAlfire.com/International"
+        return [m1, m2, m3, m4]
     }()
 }
 
