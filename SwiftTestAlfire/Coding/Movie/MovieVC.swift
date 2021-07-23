@@ -27,6 +27,7 @@ class MovieVC: BasicTableViewController {
             m.edges.equalToSuperview()
         }
         tableview.mj_header?.beginRefreshing()
+        tableview.tableHeaderView = searchBar
     }
     
     override func requestData() {
@@ -37,16 +38,37 @@ class MovieVC: BasicTableViewController {
         }
     }
 
-    /*
-    // MARK: - Navigation
+    lazy var searchBar: ZPHSearchBar = {
+        let v = ZPHSearchBar(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 44.0))
+        return v
+    }()
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+class ZPHSearchBar: UIView {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.backgroundColor = UIColor.designKit.F5F7F9Card
+        
+        addSubview(searchBtn)
+        searchBtn.snp.makeConstraints { m in
+            m.top.left.equalTo(Spacing.extraSmall)
+            m.right.bottom.equalTo(-Spacing.extraSmall)
+        }
     }
-    */
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    lazy var searchBtn: UIButton = {
+        let v = UIButton()
+        v.backgroundColor = UIColor.designKit.grey
+        v.setTitle("搜索", for: .normal)
+        v.titleLabel?.font = UIFont.designKit.subTitle
+        v.setTitleColor(.designKit.color666666, for: .normal)
+        v.asAvatar()
+        return v
+    }()
 }
 
 extension MovieVC {

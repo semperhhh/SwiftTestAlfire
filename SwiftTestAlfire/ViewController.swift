@@ -6,9 +6,9 @@
 //
 
 import UIKit
-import DesignKit
-import ZPHSuppleKit
-import SnapKit
+@_exported import DesignKit
+@_exported import ZPHSuppleKit
+@_exported import SnapKit
 @_exported import SwiftyJSON
 @_exported import Kingfisher
 @_exported import MJRefresh

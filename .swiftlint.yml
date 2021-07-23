@@ -116,7 +116,7 @@ only_rules:
   - unused_import
   - unused_optional_binding
   - unused_setter_value
-  - vertical_whitespace
+  # - vertical_whitespace
   # - vertical_whitespace_closing_braces
   # - vertical_whitespace_opening_braces
   - void_return
