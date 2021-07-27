@@ -38,8 +38,18 @@
 		E4577F8E26A568130001CC23 /* BasicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577F8D26A568130001CC23 /* BasicTableViewController.swift */; };
 		E4577F9026A573FA0001CC23 /* PHTableViewEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577F8F26A573FA0001CC23 /* PHTableViewEmpty.swift */; };
 		E4577F9326A57A360001CC23 /* MovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577F9226A57A360001CC23 /* MovieVC.swift */; };
+		E45F26F026AE66670050729E /* DarkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F26EF26AE66670050729E /* DarkVC.swift */; };
+		E45F26F226AE68D30050729E /* InternationalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F26F126AE68D30050729E /* InternationalVC.swift */; };
+		E45F26F426AE69750050729E /* Mp3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F26F326AE69750050729E /* Mp3VC.swift */; };
+		E45F26F626AE6CCC0050729E /* DarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F26F526AE6CCC0050729E /* DarkTableViewCell.swift */; };
+		E45F26F826AE6D2F0050729E /* DarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F26F726AE6D2F0050729E /* DarkModel.swift */; };
+		E45F26FB26AE9B990050729E /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F26FA26AE9B990050729E /* UITableViewCellExtension.swift */; };
+		E45F26FE26AEA8D20050729E /* Preferencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F26FD26AEA8D20050729E /* Preferencer.swift */; };
 		E47E2E8A26783BE600636A06 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47E2E8926783BE600636A06 /* SecondViewController.swift */; };
 		E47E2E8C2678456C00636A06 /* SecondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47E2E8B2678456C00636A06 /* SecondModel.swift */; };
+		E491F16026AFDFA300B9801C /* DarkShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = E491F15F26AFDFA300B9801C /* DarkShared.swift */; };
+		E491F16A26AFF9E200B9801C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E491F16826AFF9E200B9801C /* Localizable.strings */; };
+		E491F16F26AFFE7E00B9801C /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E491F16E26AFFE7E00B9801C /* Strings.swift */; };
 		E497000026A139B2006F9425 /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E497FFFF26A139B2006F9425 /* MusicData.swift */; };
 /* End PBXBuildFile section */
 
@@ -102,8 +112,19 @@
 		E4577F8D26A568130001CC23 /* BasicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewController.swift; sourceTree = "<group>"; };
 		E4577F8F26A573FA0001CC23 /* PHTableViewEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHTableViewEmpty.swift; sourceTree = "<group>"; };
 		E4577F9226A57A360001CC23 /* MovieVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVC.swift; sourceTree = "<group>"; };
+		E45F26EF26AE66670050729E /* DarkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkVC.swift; sourceTree = "<group>"; };
+		E45F26F126AE68D30050729E /* InternationalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternationalVC.swift; sourceTree = "<group>"; };
+		E45F26F326AE69750050729E /* Mp3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mp3VC.swift; sourceTree = "<group>"; };
+		E45F26F526AE6CCC0050729E /* DarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTableViewCell.swift; sourceTree = "<group>"; };
+		E45F26F726AE6D2F0050729E /* DarkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModel.swift; sourceTree = "<group>"; };
+		E45F26FA26AE9B990050729E /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		E45F26FD26AEA8D20050729E /* Preferencer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferencer.swift; sourceTree = "<group>"; };
 		E47E2E8926783BE600636A06 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E47E2E8B2678456C00636A06 /* SecondModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondModel.swift; sourceTree = "<group>"; };
+		E491F15F26AFDFA300B9801C /* DarkShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkShared.swift; sourceTree = "<group>"; };
+		E491F16926AFF9E200B9801C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E491F16B26AFF9EF00B9801C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		E491F16E26AFFE7E00B9801C /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		E497FFFF26A139B2006F9425 /* MusicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,15 +201,16 @@
 			isa = PBXGroup;
 			children = (
 				E4577F9526A57B5F0001CC23 /* Coding */,
+				E45F26F926AE9B7F0050729E /* Extension */,
 				E4577F9426A57B3D0001CC23 /* Function */,
 				E4577F8526A52C650001CC23 /* LocalData */,
 				E47E2E8D267845E600636A06 /* Second */,
+				E491F16526AFF7E900B9801C /* Resources */,
 				DA6F36CC2675A657005B0F93 /* AppDelegate.swift */,
 				DA6F36CE2675A657005B0F93 /* SceneDelegate.swift */,
 				DA6F36D02675A657005B0F93 /* ViewController.swift */,
 				DA6F36D22675A657005B0F93 /* Main.storyboard */,
 				DA6F36D52675A658005B0F93 /* Assets.xcassets */,
-				DA6F36D72675A658005B0F93 /* LaunchScreen.storyboard */,
 				DA6F36DA2675A658005B0F93 /* Info.plist */,
 				DA6F375D267BA312005B0F93 /* UIAppLicationExtension.swift */,
 			);
@@ -263,6 +285,7 @@
 		E4577F9426A57B3D0001CC23 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				E45F26FC26AEA8A40050729E /* Preference */,
 				E4577F8826A556D90001CC23 /* Refresh */,
 				E47E2E862678394A00636A06 /* Networking */,
 				DA6F372C2675DB10005B0F93 /* Routing */,
@@ -273,6 +296,9 @@
 		E4577F9526A57B5F0001CC23 /* Coding */ = {
 			isa = PBXGroup;
 			children = (
+				E45F26EE26AE664C0050729E /* Dark */,
+				E45F26ED26AE66470050729E /* Local */,
+				E45F26EC26AE66200050729E /* Mp3 */,
 				E451BF2626A9752100D09C82 /* Search */,
 				E4577F9126A57A0B0001CC23 /* Movie */,
 				E4577F8B26A567CB0001CC23 /* Basic */,
@@ -280,6 +306,50 @@
 				DA44A88E268A0E42000CB1D5 /* Music */,
 			);
 			path = Coding;
+			sourceTree = "<group>";
+		};
+		E45F26EC26AE66200050729E /* Mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				E45F26F326AE69750050729E /* Mp3VC.swift */,
+			);
+			path = Mp3;
+			sourceTree = "<group>";
+		};
+		E45F26ED26AE66470050729E /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				E491F16E26AFFE7E00B9801C /* Strings.swift */,
+				E45F26F126AE68D30050729E /* InternationalVC.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		E45F26EE26AE664C0050729E /* Dark */ = {
+			isa = PBXGroup;
+			children = (
+				E491F15F26AFDFA300B9801C /* DarkShared.swift */,
+				E45F26EF26AE66670050729E /* DarkVC.swift */,
+				E45F26F526AE6CCC0050729E /* DarkTableViewCell.swift */,
+				E45F26F726AE6D2F0050729E /* DarkModel.swift */,
+			);
+			path = Dark;
+			sourceTree = "<group>";
+		};
+		E45F26F926AE9B7F0050729E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E45F26FA26AE9B990050729E /* UITableViewCellExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E45F26FC26AEA8A40050729E /* Preference */ = {
+			isa = PBXGroup;
+			children = (
+				E45F26FD26AEA8D20050729E /* Preferencer.swift */,
+			);
+			path = Preference;
 			sourceTree = "<group>";
 		};
 		E47E2E862678394A00636A06 /* Networking */ = {
@@ -298,6 +368,15 @@
 				E47E2E8B2678456C00636A06 /* SecondModel.swift */,
 			);
 			path = Second;
+			sourceTree = "<group>";
+		};
+		E491F16526AFF7E900B9801C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E491F16826AFF9E200B9801C /* Localizable.strings */,
+				DA6F36D72675A658005B0F93 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		F5247D27CCD719A671E2FABA /* Pods */ = {
@@ -321,6 +400,7 @@
 			buildConfigurationList = DA6F36F32675A659005B0F93 /* Build configuration list for PBXNativeTarget "SwiftTestAlfire" */;
 			buildPhases = (
 				55C781E9C2C2CCD3C2A966B1 /* [CP] Check Pods Manifest.lock */,
+				E491F16126AFF5E700B9801C /* Run SwiftGen */,
 				DA6F36C52675A657005B0F93 /* Sources */,
 				DA46372E2693508A00C565E6 /* Run SwiftLint */,
 				DA6F36C62675A657005B0F93 /* Frameworks */,
@@ -404,6 +484,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = DA6F36C02675A657005B0F93;
 			productRefGroup = DA6F36CA2675A657005B0F93 /* Products */;
@@ -423,6 +504,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA6F36D92675A658005B0F93 /* LaunchScreen.storyboard in Resources */,
+				E491F16A26AFF9E200B9801C /* Localizable.strings in Resources */,
 				DA4637B926A5C56A00C565E6 /* movie_result.txt in Resources */,
 				E4577F8726A52C700001CC23 /* music_result.txt in Resources */,
 				DA6F36D62675A658005B0F93 /* Assets.xcassets in Resources */,
@@ -543,6 +625,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
+		E491F16126AFF5E700B9801C /* Run SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftGen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n";
+		};
 		E7FE16DA4343C89C5EF60B02 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -576,21 +676,30 @@
 				E497000026A139B2006F9425 /* MusicData.swift in Sources */,
 				DA44A893268A0E8C000CB1D5 /* MusicVC.swift in Sources */,
 				DA4637AC26A5BD9500C565E6 /* MovieData.swift in Sources */,
+				E491F16026AFDFA300B9801C /* DarkShared.swift in Sources */,
 				DA46371B26934D3900C565E6 /* APISession.swift in Sources */,
+				E45F26F226AE68D30050729E /* InternationalVC.swift in Sources */,
 				E4577F9026A573FA0001CC23 /* PHTableViewEmpty.swift in Sources */,
+				E45F26FE26AEA8D20050729E /* Preferencer.swift in Sources */,
+				E45F26F626AE6CCC0050729E /* DarkTableViewCell.swift in Sources */,
 				DA44A898268A0F64000CB1D5 /* MusicModel.swift in Sources */,
 				E47E2E8A26783BE600636A06 /* SecondViewController.swift in Sources */,
 				DA6F3744267B9FC7005B0F93 /* TransitionType.swift in Sources */,
 				DA6F375E267BA312005B0F93 /* UIAppLicationExtension.swift in Sources */,
+				E45F26F026AE66670050729E /* DarkVC.swift in Sources */,
 				DA44A89D268A1188000CB1D5 /* MusicCollectionViewCell.swift in Sources */,
 				E4577F9326A57A360001CC23 /* MovieVC.swift in Sources */,
 				DA46379F26A5B97E00C565E6 /* MovieModel.swift in Sources */,
+				E45F26F426AE69750050729E /* Mp3VC.swift in Sources */,
 				DA6F37282675DA96005B0F93 /* AppRouting.swift in Sources */,
 				DA6F36D12675A657005B0F93 /* ViewController.swift in Sources */,
 				DA4637A426A5BA0400C565E6 /* MovieTableViewCell.swift in Sources */,
 				E403F90226A66A3D009C7895 /* HomeTopZoonCell.swift in Sources */,
+				E45F26F826AE6D2F0050729E /* DarkModel.swift in Sources */,
 				DAB1C7582691622800C885A3 /* HomeVC.swift in Sources */,
+				E45F26FB26AE9B990050729E /* UITableViewCellExtension.swift in Sources */,
 				DA6F3754267BA0DA005B0F93 /* RoutingSource.swift in Sources */,
+				E491F16F26AFFE7E00B9801C /* Strings.swift in Sources */,
 				E47E2E8C2678456C00636A06 /* SecondModel.swift in Sources */,
 				E4577F8E26A568130001CC23 /* BasicTableViewController.swift in Sources */,
 				DA6F3759267BA1E5005B0F93 /* AppRouter.swift in Sources */,
@@ -647,6 +756,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		E491F16826AFF9E200B9801C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E491F16926AFF9E200B9801C /* en */,
+				E491F16B26AFF9EF00B9801C /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -654,6 +772,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -715,6 +834,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

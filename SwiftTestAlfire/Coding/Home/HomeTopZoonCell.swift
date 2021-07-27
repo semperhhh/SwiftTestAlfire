@@ -44,7 +44,7 @@ class HomeTopZoonCell: UITableViewCell, UICollectionViewDataSource, UICollection
         self.contentView.addSubview(collectionview)
         collectionview.snp.makeConstraints { m in
             m.top.left.right.equalToSuperview()
-            m.height.equalTo(96 * 2)
+            m.height.equalTo(96 * 3)
             m.bottom.equalToSuperview()
         }
     }

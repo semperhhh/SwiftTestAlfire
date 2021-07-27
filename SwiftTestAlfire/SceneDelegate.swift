@@ -24,6 +24,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let homevc: HomeVC = HomeVC()
         window?.rootViewController = UINavigationController(rootViewController: homevc)
         window?.makeKeyAndVisible()
+        
+        // 初始化颜色模式
+        window?.overrideUserInterfaceStyle = UIUserInterfaceStyle(rawValue: DarkShared.currentMode()) ?? .unspecified
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

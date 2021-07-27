@@ -21,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         router.register(path: "Second", navigator: SecondNavigating())
         router.register(path: "Music", navigator: MusicNavigating())
         router.register(path: "Movie", navigator: MovieNavigating())
+        router.register(path: "Dark", navigator: DarkNavigating())
+        router.register(path: "International", navigator: InternationalNavigating())
+        router.register(path: "Mp3", navigator: Mp3Navigating())
+        
         return true
     }
 

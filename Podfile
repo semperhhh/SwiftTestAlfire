@@ -17,6 +17,8 @@ target 'SwiftTestAlfire' do
   pod 'Kingfisher', '~> 6.0'
   # 轮播图
   pod 'SDCycleScrollView','>= 1.82'
+  # 多语言
+  pod 'SwiftGen', '~> 6.4.0', configurations: ['Debug']
   
   #  local
   pod 'DesignKit', :path => './Frameworks/DesignKit', :inhibit_warnings => false
