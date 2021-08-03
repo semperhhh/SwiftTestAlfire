@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BasicTableViewController: UIViewController {
+class BasicTableViewController: BasicViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,17 +71,6 @@ class BasicTableViewController: UIViewController {
         v.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         return v
     }()
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension BasicTableViewController: UITableViewDataSource, UITableViewDelegate {

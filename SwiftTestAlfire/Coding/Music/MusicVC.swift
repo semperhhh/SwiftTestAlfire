@@ -14,7 +14,7 @@ struct MusicNavigating: Navigating {
 }
 
 
-class MusicVC: UIViewController {
+class MusicVC: BasicViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,8 @@ class MusicVC: UIViewController {
         collectionView.register(MusicCollectionViewCell.self, forCellWithReuseIdentifier: "item")
         self.view.addSubview(collectionView)
         collectionView.snp.makeConstraints { (m) in
-            m.edges.equalToSuperview()
+            m.bottom.left.right.equalToSuperview()
+            m.top.equalTo(navigationView!.snp.bottom)
         }
         self.requestData()
     }

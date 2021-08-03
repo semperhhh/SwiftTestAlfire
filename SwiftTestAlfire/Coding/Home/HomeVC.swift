@@ -14,7 +14,8 @@ class HomeVC: BasicTableViewController {
         self.view.backgroundColor = UIColor.designKit.F5F7F9Background
         tableview.register(HomeTopZoonCell.self, forCellReuseIdentifier: "topZoon")
         tableview.snp.makeConstraints { m in
-            m.edges.equalToSuperview()
+            m.bottom.left.right.equalToSuperview()
+            m.top.equalTo(navigationView!.snp.bottom)
         }
     }
     
