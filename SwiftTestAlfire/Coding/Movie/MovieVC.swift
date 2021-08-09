@@ -20,11 +20,13 @@ class MovieVC: BasicTableViewController {
 
         // Do any additional setup after loading the view.
         self.title = "movie"
+        addNavigation(true, title: L10n.movieKey)
         
         tableview.register(MovieTableViewCell.self, forCellReuseIdentifier: "cell")
         addRefreshHeader().addRedfreshFooter()
         tableview.snp.makeConstraints { (m) in
-            m.edges.equalToSuperview()
+            m.top.equalTo(navigationView!.snp.bottom)
+            m.left.right.bottom.equalToSuperview()
         }
         tableview.mj_header?.beginRefreshing()
         tableview.tableHeaderView = searchBar

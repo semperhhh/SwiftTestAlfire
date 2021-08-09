@@ -5,4 +5,6 @@
   Created by zph on 2021/7/27.
   
 */
-"HomeKey" = "Home";
+"homeKey" = "Home";
+"musicKey" = "music";
+"movieKey" = "movie";

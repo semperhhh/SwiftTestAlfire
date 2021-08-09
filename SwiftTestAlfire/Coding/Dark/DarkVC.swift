@@ -14,14 +14,16 @@ struct DarkNavigating: Navigating {
     }
 }
 
-class DarkVC: UIViewController {
+class DarkVC: BasicViewController {
     
     override func viewDidLoad() {
 
         view.backgroundColor = .designKit.white
+        addNavigation(true, title: "外观模式")
         view.addSubview(tableview)
         tableview.snp.makeConstraints { m in
-            m.edges.equalToSuperview()
+            m.bottom.left.right.equalToSuperview()
+            m.top.equalTo(navigationView!.snp.bottom)
         }
 
         let p: Int = (Preferencer.value(PreferencerName.dark.rawValue) as? Int) ?? 0

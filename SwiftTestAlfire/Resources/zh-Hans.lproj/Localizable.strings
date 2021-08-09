@@ -6,5 +6,7 @@
   
 */
 
-"HomeKey" = "首页";
+"homeKey" = "首页";
+"musicKey" = "音乐";
+"movieKey" = "电影";
 

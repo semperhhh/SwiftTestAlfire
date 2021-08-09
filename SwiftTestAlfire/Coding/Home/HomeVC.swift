@@ -12,6 +12,8 @@ class HomeVC: BasicTableViewController {
         super.viewDidLoad()
         self.title = L10n.homeKey
         self.view.backgroundColor = UIColor.designKit.F5F7F9Background
+        addNavigation()
+        self.navigationTitle = L10n.homeKey
         tableview.register(HomeTopZoonCell.self, forCellReuseIdentifier: "topZoon")
         tableview.snp.makeConstraints { m in
             m.bottom.left.right.equalToSuperview()

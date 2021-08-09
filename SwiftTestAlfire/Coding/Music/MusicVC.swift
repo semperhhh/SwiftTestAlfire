@@ -21,7 +21,7 @@ class MusicVC: BasicViewController {
         
         // Do any additional setup after loading the view.
         
-        self.title = "music"
+        addNavigation(true, title: L10n.musicKey)
         collectionView.register(MusicCollectionViewCell.self, forCellWithReuseIdentifier: "item")
         self.view.addSubview(collectionView)
         collectionView.snp.makeConstraints { (m) in
