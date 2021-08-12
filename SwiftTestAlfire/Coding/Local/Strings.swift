@@ -16,6 +16,8 @@ internal enum L10n {
   internal static let movieKey = L10n.tr("Localizable", "movieKey")
   /// music
   internal static let musicKey = L10n.tr("Localizable", "musicKey")
+  /// searchKey
+  internal static let searchKey = L10n.tr("Localizable", "searchKey")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

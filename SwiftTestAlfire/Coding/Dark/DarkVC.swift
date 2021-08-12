@@ -19,7 +19,7 @@ class DarkVC: BasicViewController {
     override func viewDidLoad() {
 
         view.backgroundColor = .designKit.white
-        addNavigation(true, title: "外观模式")
+        addNavigationNormal(true, title: "外观模式")
         view.addSubview(tableview)
         tableview.snp.makeConstraints { m in
             m.bottom.left.right.equalToSuperview()
