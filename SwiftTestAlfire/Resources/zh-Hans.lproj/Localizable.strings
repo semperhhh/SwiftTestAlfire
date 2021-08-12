@@ -6,7 +6,10 @@
   
 */
 
+"CFBundleDisplayName" = "质数视频";
+
 "homeKey" = "首页";
 "musicKey" = "音乐";
 "movieKey" = "电影";
 "searchKey" = "搜索";
+"localKey" = "多语言";

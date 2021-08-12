@@ -10,14 +10,24 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
-  /// Home
-  internal static let homeKey = L10n.tr("Localizable", "homeKey")
-  /// movie
-  internal static let movieKey = L10n.tr("Localizable", "movieKey")
-  /// music
-  internal static let musicKey = L10n.tr("Localizable", "musicKey")
-  /// searchKey
-  internal static let searchKey = L10n.tr("Localizable", "searchKey")
+  internal enum InfoPlist {
+    /// zhishuVideo
+    internal static let cfBundleDisplayName = L10n.tr("InfoPlist", "CFBundleDisplayName")
+  }
+  internal enum Localizable {
+    /// zhishuVideo
+    internal static let cfBundleDisplayName = L10n.tr("Localizable", "CFBundleDisplayName")
+    /// Home
+    internal static let homeKey = L10n.tr("Localizable", "homeKey")
+    /// local
+    internal static let localKey = L10n.tr("Localizable", "localKey")
+    /// movie
+    internal static let movieKey = L10n.tr("Localizable", "movieKey")
+    /// music
+    internal static let musicKey = L10n.tr("Localizable", "musicKey")
+    /// search
+    internal static let searchKey = L10n.tr("Localizable", "searchKey")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

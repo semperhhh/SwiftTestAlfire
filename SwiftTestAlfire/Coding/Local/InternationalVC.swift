@@ -14,8 +14,9 @@ struct InternationalNavigating: Navigating {
     }
 }
 
-class InternationalVC: UIViewController {
+class InternationalVC: BasicViewController {
     override func viewDidLoad() {
         view.backgroundColor = .designKit.white
+        addNavigationNormal(true, title: "多语言")
     }
 }

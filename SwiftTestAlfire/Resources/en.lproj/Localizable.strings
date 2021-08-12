@@ -5,7 +5,11 @@
   Created by zph on 2021/7/27.
   
 */
+
+"CFBundleDisplayName" = "zhishuVideo";
+
 "homeKey" = "Home";
 "musicKey" = "music";
 "movieKey" = "movie";
-"searchKey" = "searchKey";
+"searchKey" = "search";
+"localKey" = "local";

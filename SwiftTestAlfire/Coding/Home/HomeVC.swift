@@ -10,9 +10,9 @@ import UIKit
 class HomeVC: BasicTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = L10n.homeKey
+        self.title = L10n.Localizable.homeKey
         self.view.backgroundColor = UIColor.designKit.F5F7F9Background
-        addNavigationNormal(title: L10n.homeKey)
+        addNavigationNormal(title: L10n.Localizable.homeKey)
         tableview.register(HomeTopZoonCell.self, forCellReuseIdentifier: "topZoon")
         tableview.snp.makeConstraints { m in
             m.bottom.left.right.equalToSuperview()

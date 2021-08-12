@@ -34,6 +34,7 @@
 		DAB1C7582691622800C885A3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB1C7572691622800C885A3 /* HomeVC.swift */; };
 		E4002EEE26B2451C00BF05C9 /* Mp3Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4002EED26B2451C00BF05C9 /* Mp3Encoder.swift */; };
 		E403F90226A66A3D009C7895 /* HomeTopZoonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E403F90126A66A3D009C7895 /* HomeTopZoonCell.swift */; };
+		E439082726C5230A009E65BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E439082926C5230A009E65BC /* InfoPlist.strings */; };
 		E4577F8726A52C700001CC23 /* music_result.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4577F8626A52C700001CC23 /* music_result.txt */; };
 		E4577F8A26A556F40001CC23 /* Refresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577F8926A556F40001CC23 /* Refresher.swift */; };
 		E4577F8E26A568130001CC23 /* BasicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577F8D26A568130001CC23 /* BasicTableViewController.swift */; };
@@ -113,6 +114,8 @@
 		DF1AFFDE791BB7354F36D4C8 /* Pods-SwiftTestAlfire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTestAlfire.debug.xcconfig"; path = "Target Support Files/Pods-SwiftTestAlfire/Pods-SwiftTestAlfire.debug.xcconfig"; sourceTree = "<group>"; };
 		E4002EED26B2451C00BF05C9 /* Mp3Encoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mp3Encoder.swift; sourceTree = "<group>"; };
 		E403F90126A66A3D009C7895 /* HomeTopZoonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopZoonCell.swift; sourceTree = "<group>"; };
+		E439082826C5230A009E65BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E439082A26C5230D009E65BC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		E4577F8626A52C700001CC23 /* music_result.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = music_result.txt; sourceTree = "<group>"; };
 		E4577F8926A556F40001CC23 /* Refresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refresher.swift; sourceTree = "<group>"; };
 		E4577F8D26A568130001CC23 /* BasicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewController.swift; sourceTree = "<group>"; };
@@ -396,6 +399,7 @@
 		E491F16526AFF7E900B9801C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E439082926C5230A009E65BC /* InfoPlist.strings */,
 				E491F16826AFF9E200B9801C /* Localizable.strings */,
 				DA6F36D72675A658005B0F93 /* LaunchScreen.storyboard */,
 			);
@@ -527,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA6F36D92675A658005B0F93 /* LaunchScreen.storyboard in Resources */,
+				E439082726C5230A009E65BC /* InfoPlist.strings in Resources */,
 				E491F16A26AFF9E200B9801C /* Localizable.strings in Resources */,
 				DA4637B926A5C56A00C565E6 /* movie_result.txt in Resources */,
 				E4577F8726A52C700001CC23 /* music_result.txt in Resources */,
@@ -782,6 +787,15 @@
 				DA6F36D82675A658005B0F93 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E439082926C5230A009E65BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E439082826C5230A009E65BC /* en */,
+				E439082A26C5230D009E65BC /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		E491F16826AFF9E200B9801C /* Localizable.strings */ = {

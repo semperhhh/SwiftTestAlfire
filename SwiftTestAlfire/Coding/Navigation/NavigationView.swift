@@ -166,7 +166,7 @@ class NavigationSearchView: NavigationView {
     // MARK: lazy
     lazy var searchButton: UIButton = {
         let v = UIButton()
-        v.setTitle(L10n.searchKey, for: .normal)
+        v.setTitle(L10n.Localizable.searchKey, for: .normal)
         v.setTitleColor(.designKit.color999999, for: .normal)
         v.titleLabel?.font = .designKit.subTitle
         v.backgroundColor = .designKit.F5F7F9Card
