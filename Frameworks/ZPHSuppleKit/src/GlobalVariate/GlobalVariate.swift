@@ -27,9 +27,13 @@ public var KStatusBarStyle: UIStatusBarStyle {
 }
 
 /// 手机屏幕宽
-public let kScreenWidth: CGFloat = UIScreen.main.bounds.size.width
+public var kScreenWidth: CGFloat {
+    UIScreen.main.bounds.size.width
+}
 /// 手机屏幕高
-public let kScreenHeight: CGFloat = UIScreen.main.bounds.size.height
+public var kScreenHeight: CGFloat {
+    UIScreen.main.bounds.size.height
+}
 
 /// 顶部安全区的高
 public var kSafeTopHeight: CGFloat {
@@ -47,4 +51,6 @@ public var kSafebottomHeight: CGFloat {
 }
 
 /// 导航栏的高度
-public let kNavigationHeight: CGFloat = 44 + kStatusBarHeight
+public var kNavigationHeight: CGFloat {
+    44 + kStatusBarHeight
+}

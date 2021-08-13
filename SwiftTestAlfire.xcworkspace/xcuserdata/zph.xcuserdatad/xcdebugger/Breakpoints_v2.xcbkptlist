@@ -46,8 +46,8 @@
             filePath = "SwiftTestAlfire/Coding/Movie/MovieVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "navigationRightButtonAction()"
             landmarkType = "7">
          </BreakpointContent>
