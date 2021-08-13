@@ -57,6 +57,9 @@
 		E491F16A26AFF9E200B9801C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E491F16826AFF9E200B9801C /* Localizable.strings */; };
 		E491F16F26AFFE7E00B9801C /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E491F16E26AFFE7E00B9801C /* Strings.swift */; };
 		E497000026A139B2006F9425 /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E497FFFF26A139B2006F9425 /* MusicData.swift */; };
+		E4E209A926C61E7B00176B19 /* InternationalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E209A826C61E7B00176B19 /* InternationalModel.swift */; };
+		E4E209AB26C61ECF00176B19 /* InternationalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E209AA26C61ECF00176B19 /* InternationalCell.swift */; };
+		E4E209AD26C6237300176B19 /* InternationalShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E209AC26C6237300176B19 /* InternationalShared.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +142,9 @@
 		E491F16B26AFF9EF00B9801C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E491F16E26AFFE7E00B9801C /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		E497FFFF26A139B2006F9425 /* MusicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicData.swift; sourceTree = "<group>"; };
+		E4E209A826C61E7B00176B19 /* InternationalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternationalModel.swift; sourceTree = "<group>"; };
+		E4E209AA26C61ECF00176B19 /* InternationalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternationalCell.swift; sourceTree = "<group>"; };
+		E4E209AC26C6237300176B19 /* InternationalShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternationalShared.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,6 +351,9 @@
 			children = (
 				E491F16E26AFFE7E00B9801C /* Strings.swift */,
 				E45F26F126AE68D30050729E /* InternationalVC.swift */,
+				E4E209A826C61E7B00176B19 /* InternationalModel.swift */,
+				E4E209AA26C61ECF00176B19 /* InternationalCell.swift */,
+				E4E209AC26C6237300176B19 /* InternationalShared.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -708,6 +717,7 @@
 				DA46371B26934D3900C565E6 /* APISession.swift in Sources */,
 				E45F26F226AE68D30050729E /* InternationalVC.swift in Sources */,
 				E4577F9026A573FA0001CC23 /* PHTableViewEmpty.swift in Sources */,
+				E4E209A926C61E7B00176B19 /* InternationalModel.swift in Sources */,
 				E45F26FE26AEA8D20050729E /* Preferencer.swift in Sources */,
 				E45F26F626AE6CCC0050729E /* DarkTableViewCell.swift in Sources */,
 				DA44A898268A0F64000CB1D5 /* MusicModel.swift in Sources */,
@@ -715,10 +725,12 @@
 				DA6F3744267B9FC7005B0F93 /* TransitionType.swift in Sources */,
 				DA6F375E267BA312005B0F93 /* UIAppLicationExtension.swift in Sources */,
 				E45F26F026AE66670050729E /* DarkVC.swift in Sources */,
+				E4E209AD26C6237300176B19 /* InternationalShared.swift in Sources */,
 				E4002EEE26B2451C00BF05C9 /* Mp3Encoder.swift in Sources */,
 				E46ECD9D26B8EBB1002FB97D /* UIViewControllerExtension.swift in Sources */,
 				DA44A89D268A1188000CB1D5 /* MusicCollectionViewCell.swift in Sources */,
 				E4577F9326A57A360001CC23 /* MovieVC.swift in Sources */,
+				E4E209AB26C61ECF00176B19 /* InternationalCell.swift in Sources */,
 				DA46379F26A5B97E00C565E6 /* MovieModel.swift in Sources */,
 				E45F26F426AE69750050729E /* Mp3VC.swift in Sources */,
 				E46ECDA126B92462002FB97D /* BasicViewController.swift in Sources */,

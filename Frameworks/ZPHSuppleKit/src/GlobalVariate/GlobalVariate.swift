@@ -18,6 +18,14 @@ public var kStatusBarHeight: CGFloat {
     return 20
 }
 
+/// App状态栏的样式
+public var KStatusBarStyle: UIStatusBarStyle {
+    if let manager = UIApplication.shared.windows.first?.windowScene?.statusBarManager {
+        return manager.statusBarStyle
+    }
+    return .default
+}
+
 /// 手机屏幕宽
 public let kScreenWidth: CGFloat = UIScreen.main.bounds.size.width
 /// 手机屏幕高

@@ -14,9 +14,15 @@ struct MovieNavigating: Navigating {
 }
 
 class MovieVC: BasicTableViewController {
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.overrideUserInterfaceStyle = .dark
 
         // Do any additional setup after loading the view.
         self.title = "movie"
