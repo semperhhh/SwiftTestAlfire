@@ -37,23 +37,20 @@ class HomeVC: BasicTableViewController {
         var m5: HomeTopZoonModel = HomeTopZoonModel()
         m5.title = "Mp3"
         m5.contentUrl = "https://SwiftTestAlfire.com/Mp3"
-        return [m1, m2, m3, m4, m5]
+        var m6: HomeTopZoonModel = HomeTopZoonModel()
+        m6.title = "bluetooth"
+        m6.contentUrl = "https://SwiftTestAlfire.com/Bluetooth"
+        return [m1, m2, m3, m4, m5, m6]
     }()
 }
 
 extension HomeVC {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        topZoonList.count
     }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "topZoon", for: indexPath) as! HomeTopZoonCell
-            cell.modelList = topZoonList
-            return cell
-        }
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "topZoon", for: indexPath) as! HomeTopZoonCell
+        cell.model = topZoonList[indexPath.row]
         return cell
     }
 }

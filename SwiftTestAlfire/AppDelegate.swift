@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         router.register(path: "Dark", navigator: DarkNavigating())
         router.register(path: "International", navigator: InternationalNavigating())
         router.register(path: "Mp3", navigator: Mp3Navigating())
+        router.register(path: "Bluetooth", navigator: BluetoothNavigatng())
     
         return true
     }
