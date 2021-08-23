@@ -34,6 +34,7 @@
 		DAB1C7582691622800C885A3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB1C7572691622800C885A3 /* HomeVC.swift */; };
 		E4002EEE26B2451C00BF05C9 /* Mp3Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4002EED26B2451C00BF05C9 /* Mp3Encoder.swift */; };
 		E403F90226A66A3D009C7895 /* HomeTopZoonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E403F90126A66A3D009C7895 /* HomeTopZoonCell.swift */; };
+		E431AF4E26D33C3300CC9F2F /* BluetoothCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E431AF4D26D33C3300CC9F2F /* BluetoothCell.swift */; };
 		E439082726C5230A009E65BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E439082926C5230A009E65BC /* InfoPlist.strings */; };
 		E4577F8726A52C700001CC23 /* music_result.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4577F8626A52C700001CC23 /* music_result.txt */; };
 		E4577F8A26A556F40001CC23 /* Refresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577F8926A556F40001CC23 /* Refresher.swift */; };
@@ -119,6 +120,7 @@
 		DF1AFFDE791BB7354F36D4C8 /* Pods-SwiftTestAlfire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTestAlfire.debug.xcconfig"; path = "Target Support Files/Pods-SwiftTestAlfire/Pods-SwiftTestAlfire.debug.xcconfig"; sourceTree = "<group>"; };
 		E4002EED26B2451C00BF05C9 /* Mp3Encoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mp3Encoder.swift; sourceTree = "<group>"; };
 		E403F90126A66A3D009C7895 /* HomeTopZoonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopZoonCell.swift; sourceTree = "<group>"; };
+		E431AF4D26D33C3300CC9F2F /* BluetoothCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothCell.swift; sourceTree = "<group>"; };
 		E439082826C5230A009E65BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E439082A26C5230D009E65BC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		E4577F8626A52C700001CC23 /* music_result.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = music_result.txt; sourceTree = "<group>"; };
@@ -413,8 +415,9 @@
 		E49072A526CB6D9000DC578C /* Bluetooth */ = {
 			isa = PBXGroup;
 			children = (
-				E49072A626CB6DA700DC578C /* BluetoothVC.swift */,
 				E49072A826CBACED00DC578C /* BleManager.swift */,
+				E49072A626CB6DA700DC578C /* BluetoothVC.swift */,
+				E431AF4D26D33C3300CC9F2F /* BluetoothCell.swift */,
 			);
 			path = Bluetooth;
 			sourceTree = "<group>";
@@ -733,6 +736,7 @@
 				E4577F9026A573FA0001CC23 /* PHTableViewEmpty.swift in Sources */,
 				E4E209A926C61E7B00176B19 /* InternationalModel.swift in Sources */,
 				E45F26FE26AEA8D20050729E /* Preferencer.swift in Sources */,
+				E431AF4E26D33C3300CC9F2F /* BluetoothCell.swift in Sources */,
 				E45F26F626AE6CCC0050729E /* DarkTableViewCell.swift in Sources */,
 				DA44A898268A0F64000CB1D5 /* MusicModel.swift in Sources */,
 				E47E2E8A26783BE600636A06 /* SecondViewController.swift in Sources */,

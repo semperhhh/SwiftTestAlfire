@@ -14,4 +14,7 @@ public struct Spacing {
     public static let extraLarge: CGFloat = 32
     public static let twoExtraLarge: CGFloat = 40
     public static let threeExtraLarge: CGFloat = 48
+    
+    /// 屏幕边距
+    public static let sideSpac: CGFloat = 15
 }
