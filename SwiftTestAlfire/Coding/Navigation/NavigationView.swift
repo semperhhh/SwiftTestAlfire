@@ -11,8 +11,6 @@ protocol NavigationViewDelegate {
     
     /// 默认返回按钮点击
     func navigationBackButtonAction()
-    /// 默认右边按钮点击
-    func navigationRightButtonAction()
 }
 
 class NavigationView: UIView {
@@ -50,7 +48,7 @@ class NavigationView: UIView {
     }
     
     /// 添加返回按钮
-    func addNavigationBackBtn() {
+    private func addNavigationBackBtn() {
         self.addSubview(backBtn)
         backBtn.snp.makeConstraints { m in
             m.centerY.equalTo(NavigationCenterY)
@@ -59,24 +57,27 @@ class NavigationView: UIView {
         }
     }
     
-    func addNavigationRightBtn(_ title: String) {
+    func addNavigationRightBtn(_ title: String, buttonAction: @escaping (() -> Void)) {
         let v = UIButton()
         v.setTitle(title, for: .normal)
         v.setTitleColor(.designKit.color222222, for: .normal)
         v.titleLabel?.font = .designKit.subTitle
         v.addTarget(self, action: #selector(rightBtnAction), for: .touchUpInside)
         addNavigationRightBtn(v)
+        rightBtnActionCallback = buttonAction
     }
     
-    func addNavigationRightBtn(_ image: UIImage) {
+    func addNavigationRightBtn(_ image: UIImage, buttonAction: @escaping (() -> Void)) {
         let v = UIButton()
         v.setImage(image, for: .normal)
         v.addTarget(self, action: #selector(rightBtnAction), for: .touchUpInside)
         addNavigationRightBtn(v)
+        rightBtnActionCallback = buttonAction
     }
     
     /// 添加右侧按钮
-    func addNavigationRightBtn(_ rightBtn: UIView) {
+    private func addNavigationRightBtn(_ rightBtn: UIView) {
+        self.rightBtn = rightBtn
         self.addSubview(rightBtn)
         rightBtn.snp.makeConstraints { m in
             m.centerY.equalTo(NavigationCenterY)
@@ -92,6 +93,11 @@ class NavigationView: UIView {
         return v
     }()
     
+    /// 右边的按钮
+    var rightBtn: UIView?
+    /// 右边按钮点击回调
+    var rightBtnActionCallback: (() -> Void)?
+    
     /// 分割线
     lazy var splitLine: UIView = {
         let v = UIView()
@@ -105,7 +111,7 @@ class NavigationView: UIView {
     }
     
     @objc func rightBtnAction() {
-        navigationViewDelegate?.navigationRightButtonAction()
+        rightBtnActionCallback?()
     }
     
     required init?(coder: NSCoder) {

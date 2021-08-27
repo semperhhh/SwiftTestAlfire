@@ -15,7 +15,7 @@ class MusicCollectionViewCell: UICollectionViewCell {
                 return
             }
             nameLab.text = m.name
-            imgView.kf.setImage(with: URL(string: m.image))
+            imgView.web.setImage(str: m.image)
         }
     }
     

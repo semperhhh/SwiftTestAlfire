@@ -14,7 +14,7 @@ class MovieTableViewCell: UITableViewCell {
             guard let m = model else {
                 return
             }
-            imgView.kf.setImage(with: URL(string: m.imageUrl))
+            imgView.web.setImage(str: m.imageUrl)
             nameLab.text = m.title
             subNameLab.text = m.subTitle
         }

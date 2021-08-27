@@ -34,6 +34,7 @@
 		DAB1C7582691622800C885A3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB1C7572691622800C885A3 /* HomeVC.swift */; };
 		E4002EEE26B2451C00BF05C9 /* Mp3Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4002EED26B2451C00BF05C9 /* Mp3Encoder.swift */; };
 		E403F90226A66A3D009C7895 /* HomeTopZoonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E403F90126A66A3D009C7895 /* HomeTopZoonCell.swift */; };
+		E4278C9926D8D791009FCC33 /* WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4278C9826D8D791009FCC33 /* WebImage.swift */; };
 		E431AF4E26D33C3300CC9F2F /* BluetoothCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E431AF4D26D33C3300CC9F2F /* BluetoothCell.swift */; };
 		E439082726C5230A009E65BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E439082926C5230A009E65BC /* InfoPlist.strings */; };
 		E4577F8726A52C700001CC23 /* music_result.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4577F8626A52C700001CC23 /* music_result.txt */; };
@@ -120,6 +121,7 @@
 		DF1AFFDE791BB7354F36D4C8 /* Pods-SwiftTestAlfire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTestAlfire.debug.xcconfig"; path = "Target Support Files/Pods-SwiftTestAlfire/Pods-SwiftTestAlfire.debug.xcconfig"; sourceTree = "<group>"; };
 		E4002EED26B2451C00BF05C9 /* Mp3Encoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mp3Encoder.swift; sourceTree = "<group>"; };
 		E403F90126A66A3D009C7895 /* HomeTopZoonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopZoonCell.swift; sourceTree = "<group>"; };
+		E4278C9826D8D791009FCC33 /* WebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImage.swift; sourceTree = "<group>"; };
 		E431AF4D26D33C3300CC9F2F /* BluetoothCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothCell.swift; sourceTree = "<group>"; };
 		E439082826C5230A009E65BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E439082A26C5230D009E65BC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -271,6 +273,14 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		E4278C9726D8D756009FCC33 /* WebImage */ = {
+			isa = PBXGroup;
+			children = (
+				E4278C9826D8D791009FCC33 /* WebImage.swift */,
+			);
+			path = WebImage;
+			sourceTree = "<group>";
+		};
 		E451BF2626A9752100D09C82 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +329,7 @@
 		E4577F9426A57B3D0001CC23 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				E4278C9726D8D756009FCC33 /* WebImage */,
 				E45F26FC26AEA8A40050729E /* Preference */,
 				E4577F8826A556D90001CC23 /* Refresh */,
 				E47E2E862678394A00636A06 /* Networking */,
@@ -767,6 +778,7 @@
 				E491F16F26AFFE7E00B9801C /* Strings.swift in Sources */,
 				E47E2E8C2678456C00636A06 /* SecondModel.swift in Sources */,
 				E4577F8E26A568130001CC23 /* BasicTableViewController.swift in Sources */,
+				E4278C9926D8D791009FCC33 /* WebImage.swift in Sources */,
 				DA6F3759267BA1E5005B0F93 /* AppRouter.swift in Sources */,
 				DA6F36CD2675A657005B0F93 /* AppDelegate.swift in Sources */,
 				DA6F374F267BA049005B0F93 /* Navigating.swift in Sources */,

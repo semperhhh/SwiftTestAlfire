@@ -23,7 +23,9 @@ class MovieVC: BasicTableViewController {
         addNavigationSearch(true) {
             print("点击了搜索")
         }
-        navigationView?.addNavigationRightBtn("点击")
+        navigationView?.addNavigationRightBtn("点击", buttonAction: {
+            print("点击")
+        })
         
         tableview.register(MovieTableViewCell.self, forCellReuseIdentifier: "cell")
         addRefreshHeader().addRedfreshFooter()
@@ -40,10 +42,6 @@ class MovieVC: BasicTableViewController {
             self.tableview.reloadData()
             self.endRefreshing()
         }
-    }
-    
-    override func navigationRightButtonAction() {
-        print("点击")
     }
 }
 
