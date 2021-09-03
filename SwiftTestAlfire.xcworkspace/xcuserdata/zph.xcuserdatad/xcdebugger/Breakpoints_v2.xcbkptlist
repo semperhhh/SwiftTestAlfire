@@ -46,8 +46,8 @@
             filePath = "SwiftTestAlfire/Coding/Bluetooth/BleManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
             landmarkName = "peripheral(_:didUpdateValueFor:error:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "SwiftTestAlfire/Coding/Bluetooth/BleManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "peripheral(_:didDiscoverCharacteristicsFor:error:)"
             landmarkType = "7">
          </BreakpointContent>

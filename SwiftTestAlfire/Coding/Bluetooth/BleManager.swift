@@ -11,6 +11,8 @@ import CoreBluetooth
 // 蓝牙协议
 protocol BleManagering {
     
+    /// 更新设备列表
+    /// - Parameter closure: 回调
     func updatePeripherals(closure: @escaping (() -> Void))
     
     /// 连接
@@ -18,6 +20,10 @@ protocol BleManagering {
     ///   - peripheral: 设备
     ///   - options: 可选
     func managerConnect(peripheral: CBPeripheral, options: [String: Any]?)
+    
+    /// 特征写入消息
+    /// - Parameter str: 消息
+    func managerCharacteristicWrite(str: String)
 }
 
 // 单例
@@ -42,6 +48,9 @@ open class BleManager: NSObject, BleManagering {
     /// 连接的设备
     var peripheral: CBPeripheral?
     
+    /// 连接的服务特征
+    var character: CBCharacteristic?
+    
     /// 更新列表回调
     var updatePeripheralsCallback: (() -> Void)?
     
@@ -63,6 +72,12 @@ extension BleManager {
     
     func managerConnect(peripheral: CBPeripheral, options: [String: Any]?) {
         manager.connect(peripheral, options: options)
+    }
+    
+    func managerCharacteristicWrite(str: String) {
+        if let d: Data = str.data(using: .utf8), (self.character != nil) {
+            self.peripheral?.writeValue(d, for: self.character!, type: .withResponse)
+        }
     }
 }
 
@@ -136,6 +151,8 @@ extension BleManager: CBCentralManagerDelegate {
 }
 
 extension BleManager: CBPeripheralDelegate {
+    
+    /// 发现服务的回调
     public func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         guard error == nil else {
             print("didDiscoverServices error - \(peripheral.name ?? "") error - \(error?.localizedDescription ?? "")")
@@ -143,12 +160,15 @@ extension BleManager: CBPeripheralDelegate {
         }
         if let services = peripheral.services {
             for service in services {
-                print("service UUID - \(service)")
+                print("service - \(service.uuid.uuidString)")
                 // 扫描每个service的Characteristics，扫描到后会进入方法
                 peripheral.discoverCharacteristics(nil, for: service)
             }
         }
     }
+    
+    /// 发现characteristics, 获取读的写的characteristics
+    /// 发现特征
     public func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
         guard error == nil else {
             print("didDiscoverCharacteristicsFor error - \(error?.localizedDescription ?? "")")
@@ -159,26 +179,44 @@ extension BleManager: CBPeripheralDelegate {
                 print("service: \(service.uuid), characteristic: \(character.uuid)")
                 // 接收一次
                 peripheral.readValue(for: character)
-                // 订阅 实时接收
-                peripheral.setNotifyValue(true, for: character)
+                // 订阅 实时接收 (发现特征之后一定要打开通知特性，否则写入数据之后，不会收到回复数据)
+//                peripheral.setNotifyValue(true, for: character)
                 
-                // 发送一条指令
-                if let data: Data = "硬件工程师给我的指令, 发送给蓝牙该指令, 蓝牙会给我返回一条数据".data(using: .utf8) {
-                    self.peripheral?.writeValue(data, for: character, type: .withResponse)
-                }
-                // 当发现characteristic有descriptor,回调didDiscoverDescriptorsForCharacteristic
-                peripheral.discoverDescriptors(for: character)
+//                // 发送一条指令
+//                if let data: Data = "硬件工程师给我的指令, 发送给蓝牙该指令, 蓝牙会给我返回一条数据".data(using: .utf8) {
+//                    self.peripheral?.writeValue(data, for: character, type: .withResponse)
+//                }
+//                // 当发现characteristic有descriptor,回调didDiscoverDescriptorsForCharacteristic
+//                peripheral.discoverDescriptors(for: character)
             }
         }
     }
     
-    // MARK: 从外设读取数据
+    /// 写入回调
+    /// - Parameters:
+    ///   - peripheral: 外设
+    ///   - characteristic: 特征
+    ///   - error: 错误
+    public func peripheral(_ peripheral: CBPeripheral, didWriteValueFor characteristic: CBCharacteristic, error: Error?) {
+        guard error != nil else {
+            print("写入失败 characteristic = \(characteristic) error - \(error?.localizedDescription ?? "error")")
+            return
+        }
+        print("写入成功  characteristic = \(characteristic)")
+    }
+    
+    // 特征描述
+    public func peripheral(_ peripheral: CBPeripheral, didDiscoverDescriptorsFor characteristic: CBCharacteristic, error: Error?) {
+        
+    }
+    
+    // MARK: 从外设读取数据 ?? 写入成功后的应答
     public func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
         guard let data = characteristic.value else {
             return
         }
         let dataDic = String(data: data, encoding: .utf8)
-        print("dataDic - \(dataDic ?? "data error")")
+        print("characteristic uuid = \(characteristic.uuid) dataDic - \(dataDic ?? "data error")")
 //        guard let dataDic = try? JSONSerialization.jsonObject(with: data, options: []) else {
 //            print("从外设读取数据 解析失败")
 //            return
