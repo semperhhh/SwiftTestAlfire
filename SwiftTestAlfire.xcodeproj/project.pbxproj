@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0517FCDE632AD9453AFF6B66 /* Pods_SwiftTestAlfire_SwiftTestAlfireUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B1F258C5D39EE5D7B55959 /* Pods_SwiftTestAlfire_SwiftTestAlfireUITests.framework */; };
 		279F8AF60FC166CE74BDD58B /* Pods_SwiftTestAlfireTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7EDBEA9E91208E9FBA9DB7 /* Pods_SwiftTestAlfireTests.framework */; };
-		D487454DEB56FEE202402157 /* Pods_SwiftTestAlfire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FEBEF18D7E99EB2AFF95EE /* Pods_SwiftTestAlfire.framework */; };
+		BEF9FE28551759C731086390 /* Pods_SwiftTestAlfire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FEBEF18D7E99EB2AFF95EE /* Pods_SwiftTestAlfire.framework */; };
 		DA44A893268A0E8C000CB1D5 /* MusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44A892268A0E8C000CB1D5 /* MusicVC.swift */; };
 		DA44A898268A0F64000CB1D5 /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44A897268A0F64000CB1D5 /* MusicModel.swift */; };
 		DA44A89D268A1188000CB1D5 /* MusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44A89C268A1188000CB1D5 /* MusicCollectionViewCell.swift */; };
@@ -55,6 +55,7 @@
 		E46ECDA126B92462002FB97D /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46ECDA026B92462002FB97D /* BasicViewController.swift */; };
 		E47E2E8A26783BE600636A06 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47E2E8926783BE600636A06 /* SecondViewController.swift */; };
 		E47E2E8C2678456C00636A06 /* SecondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47E2E8B2678456C00636A06 /* SecondModel.swift */; };
+		E48F7CBA26F1813700AE12A5 /* testc.c in Sources */ = {isa = PBXBuildFile; fileRef = E48F7CB926F1813700AE12A5 /* testc.c */; };
 		E49072A726CB6DA700DC578C /* BluetoothVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49072A626CB6DA700DC578C /* BluetoothVC.swift */; };
 		E49072A926CBACED00DC578C /* BleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49072A826CBACED00DC578C /* BleManager.swift */; };
 		E491F16026AFDFA300B9801C /* DarkShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = E491F15F26AFDFA300B9801C /* DarkShared.swift */; };
@@ -143,6 +144,9 @@
 		E46ECDA026B92462002FB97D /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
 		E47E2E8926783BE600636A06 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E47E2E8B2678456C00636A06 /* SecondModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondModel.swift; sourceTree = "<group>"; };
+		E48F7CB726F1813700AE12A5 /* SwiftTestAlfire-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftTestAlfire-Bridging-Header.h"; sourceTree = "<group>"; };
+		E48F7CB826F1813700AE12A5 /* testc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testc.h; sourceTree = "<group>"; };
+		E48F7CB926F1813700AE12A5 /* testc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = testc.c; sourceTree = "<group>"; };
 		E49072A626CB6DA700DC578C /* BluetoothVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothVC.swift; sourceTree = "<group>"; };
 		E49072A826CBACED00DC578C /* BleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleManager.swift; sourceTree = "<group>"; };
 		E491F15F26AFDFA300B9801C /* DarkShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkShared.swift; sourceTree = "<group>"; };
@@ -160,7 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D487454DEB56FEE202402157 /* Pods_SwiftTestAlfire.framework in Frameworks */,
+				BEF9FE28551759C731086390 /* Pods_SwiftTestAlfire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +237,7 @@
 				E4577F8526A52C650001CC23 /* LocalData */,
 				E47E2E8D267845E600636A06 /* Second */,
 				E491F16526AFF7E900B9801C /* Resources */,
+				E48F7CB726F1813700AE12A5 /* SwiftTestAlfire-Bridging-Header.h */,
 				DA6F36CC2675A657005B0F93 /* AppDelegate.swift */,
 				DA6F36CE2675A657005B0F93 /* SceneDelegate.swift */,
 				DA6F36D02675A657005B0F93 /* ViewController.swift */,
@@ -360,6 +365,8 @@
 			children = (
 				E45F26F326AE69750050729E /* Mp3VC.swift */,
 				E4002EED26B2451C00BF05C9 /* Mp3Encoder.swift */,
+				E48F7CB826F1813700AE12A5 /* testc.h */,
+				E48F7CB926F1813700AE12A5 /* testc.c */,
 			);
 			path = Mp3;
 			sourceTree = "<group>";
@@ -530,6 +537,7 @@
 				TargetAttributes = {
 					DA6F36C82675A657005B0F93 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1250;
 					};
 					DA6F36DE2675A658005B0F93 = {
 						CreatedOnToolsVersion = 12.4;
@@ -764,6 +772,7 @@
 				E45F26F426AE69750050729E /* Mp3VC.swift in Sources */,
 				E49072A726CB6DA700DC578C /* BluetoothVC.swift in Sources */,
 				E46ECDA126B92462002FB97D /* BasicViewController.swift in Sources */,
+				E48F7CBA26F1813700AE12A5 /* testc.c in Sources */,
 				DA6F37282675DA96005B0F93 /* AppRouting.swift in Sources */,
 				E46ECD9F26B8F805002FB97D /* NavigationView.swift in Sources */,
 				DA6F36D12675A657005B0F93 /* ViewController.swift in Sources */,
@@ -976,20 +985,28 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DF1AFFDE791BB7354F36D4C8 /* Pods-SwiftTestAlfire.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3LQZWC5F6U;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = SwiftTestAlfire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftTestAlfire/Coding/Mp3/FFmpeg-iOS/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZPH.SwiftTestAlfire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftTestAlfire/SwiftTestAlfire-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/Users/zph/Desktop/SwiftTestAlfire/SwiftTestAlfire/Coding/Mp3/FFmpeg-iOS/include";
 			};
 			name = Debug;
 		};
@@ -997,20 +1014,27 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B8462378E2D551477AC35B9 /* Pods-SwiftTestAlfire.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3LQZWC5F6U;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = SwiftTestAlfire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftTestAlfire/Coding/Mp3/FFmpeg-iOS/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZPH.SwiftTestAlfire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftTestAlfire/SwiftTestAlfire-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/Users/zph/Desktop/SwiftTestAlfire/SwiftTestAlfire/Coding/Mp3/FFmpeg-iOS/include";
 			};
 			name = Release;
 		};

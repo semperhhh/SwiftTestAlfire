@@ -21,4 +21,8 @@ class Mp3VC: BasicViewController {
         
         addNavigationNormal(true, title: "音频")
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        haha()
+    }
 }
