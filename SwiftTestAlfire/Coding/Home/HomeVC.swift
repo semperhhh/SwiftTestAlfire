@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class HomeVC: BasicTableViewController {
     override func viewDidLoad() {
@@ -18,30 +19,14 @@ class HomeVC: BasicTableViewController {
             m.bottom.left.right.equalToSuperview()
             m.top.equalTo(navigationView!.snp.bottom)
         }
+        
+        HomeData().requestLocal { list in
+            self.topZoonList = list
+            self.tableview.reloadData()
+        }
     }
     
-    // MARK:
-    lazy var topZoonList: [HomeTopZoonModel] = {
-        var m1: HomeTopZoonModel = HomeTopZoonModel()
-        m1.title = "音乐"
-        m1.contentUrl = "https://SwiftTestAlfire.com/Music"
-        var m2: HomeTopZoonModel = HomeTopZoonModel()
-        m2.title = "电影"
-        m2.contentUrl = "https://SwiftTestAlfire.com/Movie"
-        var m3: HomeTopZoonModel = HomeTopZoonModel()
-        m3.title = "深色模式"
-        m3.contentUrl = "https://SwiftTestAlfire.com/Dark"
-        var m4: HomeTopZoonModel = HomeTopZoonModel()
-        m4.title = "国际化"
-        m4.contentUrl = "https://SwiftTestAlfire.com/International"
-        var m5: HomeTopZoonModel = HomeTopZoonModel()
-        m5.title = "Mp3"
-        m5.contentUrl = "https://SwiftTestAlfire.com/Mp3"
-        var m6: HomeTopZoonModel = HomeTopZoonModel()
-        m6.title = "bluetooth"
-        m6.contentUrl = "https://SwiftTestAlfire.com/Bluetooth"
-        return [m1, m2, m3, m4, m5, m6]
-    }()
+    lazy var topZoonList: [HomeTopZoonModel] = []
 }
 
 extension HomeVC {

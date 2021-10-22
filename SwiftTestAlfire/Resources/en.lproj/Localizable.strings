@@ -13,3 +13,8 @@
 "movieKey" = "movie";
 "searchKey" = "search";
 "localKey" = "local";
+"darkModeKey" = "darkMode";
+"dark" = "dark";
+"light" = "light";
+"autoSystem" = "autoSystem";
+"bluetoothKey" = "Bluetooth";

@@ -1,0 +1,32 @@
+[
+    {
+        "title": "音乐",
+        "description": "豆瓣摇滚音乐top250",
+        "contentUrl": "https://SwiftTestAlfire.com/Music",
+    },
+    {
+        "title": "电影",
+        "description": "豆瓣电影top100",
+        "contentUrl": "https://SwiftTestAlfire.com/Movie",
+    },
+    {
+        "title": "深色模式",
+        "description": "设置app的dark或者light",
+        "contentUrl": "https://SwiftTestAlfire.com/Dark",
+    },
+    {
+        "title": "国际化",
+        "description": "跟随系统改变语言包",
+        "contentUrl": "https://SwiftTestAlfire.com/International",
+    },
+    {
+        "title": "Mp3",
+        "description": "流媒体播放器",
+        "contentUrl": "https://SwiftTestAlfire.com/Mp3",
+    },
+    {
+        "title": "bluetooth",
+        "description": "蓝牙连接外设",
+        "contentUrl": "https://SwiftTestAlfire.com/Bluetooth",
+    },
+]

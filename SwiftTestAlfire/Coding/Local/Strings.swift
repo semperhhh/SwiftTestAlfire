@@ -15,10 +15,20 @@ internal enum L10n {
     internal static let cfBundleDisplayName = L10n.tr("InfoPlist", "CFBundleDisplayName")
   }
   internal enum Localizable {
+    /// autoSystem
+    internal static let autoSystem = L10n.tr("Localizable", "autoSystem")
+    /// Bluetooth
+    internal static let bluetoothKey = L10n.tr("Localizable", "bluetoothKey")
     /// zhishuVideo
     internal static let cfBundleDisplayName = L10n.tr("Localizable", "CFBundleDisplayName")
+    /// dark
+    internal static let dark = L10n.tr("Localizable", "dark")
+    /// darkMode
+    internal static let darkModeKey = L10n.tr("Localizable", "darkModeKey")
     /// Home
     internal static let homeKey = L10n.tr("Localizable", "homeKey")
+    /// light
+    internal static let light = L10n.tr("Localizable", "light")
     /// local
     internal static let localKey = L10n.tr("Localizable", "localKey")
     /// movie

@@ -13,3 +13,8 @@
 "movieKey" = "电影";
 "searchKey" = "搜索";
 "localKey" = "多语言";
+"darkModeKey" = "外观模式";
+"dark" = "深色";
+"light" = "浅色";
+"autoSystem" = "跟随系统";
+"bluetoothKey" = "蓝牙";

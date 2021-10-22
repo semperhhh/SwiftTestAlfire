@@ -17,7 +17,7 @@ struct InternationalNavigating: Navigating {
 class InternationalVC: BasicViewController {
     override func viewDidLoad() {
         view.backgroundColor = .designKit.white
-        addNavigationNormal(true, title: "多语言")
+        addNavigationNormal(true, title: L10n.Localizable.localKey)
         view.addSubview(tableview)
         tableview.snp.makeConstraints { m in
             m.bottom.left.right.equalToSuperview()
@@ -28,7 +28,7 @@ class InternationalVC: BasicViewController {
     }
     
     func setupMode(_ languageStr: InternationalShared.InternationalLanguage) {
-        let m3 = InternationalModel(name: "跟随系统", isSelect: true)
+        let m3 = InternationalModel(name: L10n.Localizable.autoSystem, isSelect: true)
         dataList = [m3]
     }
     

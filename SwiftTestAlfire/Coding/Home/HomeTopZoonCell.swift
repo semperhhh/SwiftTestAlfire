@@ -8,8 +8,15 @@
 import UIKit
 import DesignKit
 
-struct HomeTopZoonModel {
+struct HomeTopZoonModel: SwiftyJsonModelProtocol {
+    init(_ json: JSON) {
+        title = json["title"].stringValue
+        description = json["description"].stringValue
+        contentUrl = json["contentUrl"].stringValue
+    }
+    
     var title: String = ""
+    var description: String = ""
     var contentUrl: String = ""
 }
 
@@ -21,6 +28,7 @@ class HomeTopZoonCell: UITableViewCell {
                 return
             }
             nameLab.text = m.title
+            descLab.text = m.description
         }
     }
     
@@ -28,14 +36,27 @@ class HomeTopZoonCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         initWithNone()
         
-        self.backgroundColor = UIColor.designKit.white
-        self.contentView.addSubview(nameLab)
+        backgroundColor = UIColor.designKit.white
+        contentView.addSubview(nameLab)
+        contentView.addSubview(descLab)
+        contentView.addSubview(splitView)
+        
         nameLab.snp.makeConstraints { m in
-            m.top.equalTo(Spacing.twoExtraSmall)
-            m.left.equalTo(Spacing.small)
-            m.right.equalTo(-Spacing.small)
-            m.bottom.equalTo(-Spacing.twoExtraSmall)
-            m.height.equalTo(64)
+            m.top.equalTo(Spacing.extraSmall)
+            m.left.equalTo(Spacing.sideSpac)
+            m.right.lessThanOrEqualTo(-Spacing.sideSpac)
+        }
+        descLab.snp.makeConstraints { make in
+            make.top.equalTo(nameLab.snp.bottom).offset(Spacing.extraSmall)
+            make.left.equalTo(Spacing.sideSpac)
+            make.right.equalTo(-Spacing.sideSpac)
+        }
+        splitView.snp.makeConstraints { make in
+            make.top.equalTo(descLab.snp.bottom).offset(Spacing.extraSmall)
+            make.bottom.equalToSuperview()
+            make.left.equalTo(Spacing.sideSpac)
+            make.right.equalTo(-Spacing.sideSpac)
+            make.height.equalTo(1)
         }
     }
     
@@ -47,13 +68,23 @@ class HomeTopZoonCell: UITableViewCell {
     }
     
     // MARK: lazy
-    lazy var nameLab: UILabel = {
+    private lazy var nameLab: UILabel = {
         let v = UILabel()
         v.textColor = UIColor.designKit.color222222
         v.font = UIFont.designKit.title
-        v.textAlignment = .center
-        v.backgroundColor = UIColor.designKit.EEEEEE
-        v.asAvatar()
+        return v
+    }()
+    
+    lazy var descLab: UILabel = {
+        let v = UILabel()
+        v.textColor = .designKit.color666666
+        v.font = .designKit.subTitle
+        return v
+    }()
+    
+    private lazy var splitView: UIView = {
+        let v = UIView()
+        v.backgroundColor = #colorLiteral(red: 0.9332618117, green: 0.9333737493, blue: 0.9332236052, alpha: 1)
         return v
     }()
     

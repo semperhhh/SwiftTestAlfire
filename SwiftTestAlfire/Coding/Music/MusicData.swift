@@ -25,7 +25,7 @@ class MusicData: APISession {
     /// 本地数据
     func requestLocal(closure: @escaping ([MusicModel]) -> Void) {
         
-        guard let musicJson = try? String.init(contentsOfFile: Bundle.main.path(forResource: "music_result.txt", ofType: nil) ?? "") else {
+        guard let musicJson = try? String.init(contentsOfFile: Bundle.main.path(forResource: "music_result.json", ofType: nil) ?? "") else {
             print("musicJson error")
             return
         }

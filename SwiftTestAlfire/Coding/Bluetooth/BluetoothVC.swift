@@ -21,7 +21,7 @@ class BluetoothVC: BasicViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .designKit.white
-        addNavigationNormal(true, title: "Bluetooth")
+        addNavigationNormal(true, title: L10n.Localizable.bluetoothKey)
         view.addSubview(tableview)
         tableview.snp.makeConstraints { m in
             m.top.equalTo(navigationView!.snp.bottom)

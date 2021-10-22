@@ -13,7 +13,7 @@ class MovieData: APISession {
     /// 本地数据
     func requestLocal(closure: @escaping ([MovieModel]) -> Void) {
         
-        guard let movieJson = try? String.init(contentsOfFile: Bundle.main.path(forResource: "movie_result.txt", ofType: nil) ?? "") else {
+        guard let movieJson = try? String.init(contentsOfFile: Bundle.main.path(forResource: "movie_result.json", ofType: nil) ?? "") else {
             print("movieJson error")
             return
         }

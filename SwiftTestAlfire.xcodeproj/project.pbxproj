@@ -18,7 +18,6 @@
 		DA46379F26A5B97E00C565E6 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA46379E26A5B97E00C565E6 /* MovieModel.swift */; };
 		DA4637A426A5BA0400C565E6 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4637A326A5BA0400C565E6 /* MovieTableViewCell.swift */; };
 		DA4637AC26A5BD9500C565E6 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4637AB26A5BD9500C565E6 /* MovieData.swift */; };
-		DA4637B926A5C56A00C565E6 /* movie_result.txt in Resources */ = {isa = PBXBuildFile; fileRef = DA4637B826A5C56A00C565E6 /* movie_result.txt */; };
 		DA6F36CD2675A657005B0F93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F36CC2675A657005B0F93 /* AppDelegate.swift */; };
 		DA6F36CF2675A657005B0F93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F36CE2675A657005B0F93 /* SceneDelegate.swift */; };
 		DA6F36D12675A657005B0F93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F36D02675A657005B0F93 /* ViewController.swift */; };
@@ -37,7 +36,6 @@
 		E4278C9926D8D791009FCC33 /* WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4278C9826D8D791009FCC33 /* WebImage.swift */; };
 		E431AF4E26D33C3300CC9F2F /* BluetoothCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E431AF4D26D33C3300CC9F2F /* BluetoothCell.swift */; };
 		E439082726C5230A009E65BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E439082926C5230A009E65BC /* InfoPlist.strings */; };
-		E4577F8726A52C700001CC23 /* music_result.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4577F8626A52C700001CC23 /* music_result.txt */; };
 		E4577F8A26A556F40001CC23 /* Refresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577F8926A556F40001CC23 /* Refresher.swift */; };
 		E4577F8E26A568130001CC23 /* BasicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577F8D26A568130001CC23 /* BasicTableViewController.swift */; };
 		E4577F9026A573FA0001CC23 /* PHTableViewEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577F8F26A573FA0001CC23 /* PHTableViewEmpty.swift */; };
@@ -55,6 +53,10 @@
 		E46ECDA126B92462002FB97D /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46ECDA026B92462002FB97D /* BasicViewController.swift */; };
 		E47E2E8A26783BE600636A06 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47E2E8926783BE600636A06 /* SecondViewController.swift */; };
 		E47E2E8C2678456C00636A06 /* SecondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47E2E8B2678456C00636A06 /* SecondModel.swift */; };
+		E4861086272158C000F53E5A /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = E4861085272158C000F53E5A /* home.json */; };
+		E4861088272159A900F53E5A /* HomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4861087272159A900F53E5A /* HomeData.swift */; };
+		E486108B27215D8800F53E5A /* music_result.json in Resources */ = {isa = PBXBuildFile; fileRef = E486108927215D8800F53E5A /* music_result.json */; };
+		E486108C27215D8800F53E5A /* movie_result.json in Resources */ = {isa = PBXBuildFile; fileRef = E486108A27215D8800F53E5A /* movie_result.json */; };
 		E48F7CBA26F1813700AE12A5 /* testc.c in Sources */ = {isa = PBXBuildFile; fileRef = E48F7CB926F1813700AE12A5 /* testc.c */; };
 		E49072A726CB6DA700DC578C /* BluetoothVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49072A626CB6DA700DC578C /* BluetoothVC.swift */; };
 		E49072A926CBACED00DC578C /* BleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49072A826CBACED00DC578C /* BleManager.swift */; };
@@ -101,7 +103,6 @@
 		DA46379E26A5B97E00C565E6 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		DA4637A326A5BA0400C565E6 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		DA4637AB26A5BD9500C565E6 /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
-		DA4637B826A5C56A00C565E6 /* movie_result.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = movie_result.txt; sourceTree = "<group>"; };
 		DA6F36C92675A657005B0F93 /* SwiftTestAlfire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTestAlfire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6F36CC2675A657005B0F93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA6F36CE2675A657005B0F93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,7 +127,6 @@
 		E431AF4D26D33C3300CC9F2F /* BluetoothCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothCell.swift; sourceTree = "<group>"; };
 		E439082826C5230A009E65BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E439082A26C5230D009E65BC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		E4577F8626A52C700001CC23 /* music_result.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = music_result.txt; sourceTree = "<group>"; };
 		E4577F8926A556F40001CC23 /* Refresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refresher.swift; sourceTree = "<group>"; };
 		E4577F8D26A568130001CC23 /* BasicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewController.swift; sourceTree = "<group>"; };
 		E4577F8F26A573FA0001CC23 /* PHTableViewEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHTableViewEmpty.swift; sourceTree = "<group>"; };
@@ -144,6 +144,10 @@
 		E46ECDA026B92462002FB97D /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
 		E47E2E8926783BE600636A06 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E47E2E8B2678456C00636A06 /* SecondModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondModel.swift; sourceTree = "<group>"; };
+		E4861085272158C000F53E5A /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
+		E4861087272159A900F53E5A /* HomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeData.swift; sourceTree = "<group>"; };
+		E486108927215D8800F53E5A /* music_result.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = music_result.json; sourceTree = "<group>"; };
+		E486108A27215D8800F53E5A /* movie_result.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_result.json; sourceTree = "<group>"; };
 		E48F7CB726F1813700AE12A5 /* SwiftTestAlfire-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftTestAlfire-Bridging-Header.h"; sourceTree = "<group>"; };
 		E48F7CB826F1813700AE12A5 /* testc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testc.h; sourceTree = "<group>"; };
 		E48F7CB926F1813700AE12A5 /* testc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = testc.c; sourceTree = "<group>"; };
@@ -265,6 +269,7 @@
 			children = (
 				DAB1C7572691622800C885A3 /* HomeVC.swift */,
 				E403F90126A66A3D009C7895 /* HomeTopZoonCell.swift */,
+				E4861087272159A900F53E5A /* HomeData.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -296,8 +301,9 @@
 		E4577F8526A52C650001CC23 /* LocalData */ = {
 			isa = PBXGroup;
 			children = (
-				DA4637B826A5C56A00C565E6 /* movie_result.txt */,
-				E4577F8626A52C700001CC23 /* music_result.txt */,
+				E486108A27215D8800F53E5A /* movie_result.json */,
+				E486108927215D8800F53E5A /* music_result.json */,
+				E4861085272158C000F53E5A /* home.json */,
 			);
 			path = LocalData;
 			sourceTree = "<group>";
@@ -577,11 +583,12 @@
 			files = (
 				DA6F36D92675A658005B0F93 /* LaunchScreen.storyboard in Resources */,
 				E439082726C5230A009E65BC /* InfoPlist.strings in Resources */,
+				E4861086272158C000F53E5A /* home.json in Resources */,
 				E491F16A26AFF9E200B9801C /* Localizable.strings in Resources */,
-				DA4637B926A5C56A00C565E6 /* movie_result.txt in Resources */,
-				E4577F8726A52C700001CC23 /* music_result.txt in Resources */,
 				DA6F36D62675A658005B0F93 /* Assets.xcassets in Resources */,
+				E486108B27215D8800F53E5A /* music_result.json in Resources */,
 				DA6F36D42675A657005B0F93 /* Main.storyboard in Resources */,
+				E486108C27215D8800F53E5A /* movie_result.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,6 +791,7 @@
 				DAB1C7582691622800C885A3 /* HomeVC.swift in Sources */,
 				E45F26FB26AE9B990050729E /* UITableViewCellExtension.swift in Sources */,
 				DA6F3754267BA0DA005B0F93 /* RoutingSource.swift in Sources */,
+				E4861088272159A900F53E5A /* HomeData.swift in Sources */,
 				E491F16F26AFFE7E00B9801C /* Strings.swift in Sources */,
 				E47E2E8C2678456C00636A06 /* SecondModel.swift in Sources */,
 				E4577F8E26A568130001CC23 /* BasicTableViewController.swift in Sources */,

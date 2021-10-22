@@ -19,7 +19,7 @@ class DarkVC: BasicViewController {
     override func viewDidLoad() {
 
         view.backgroundColor = .designKit.white
-        addNavigationNormal(true, title: "外观模式")
+        addNavigationNormal(true, title: L10n.Localizable.darkModeKey)
         view.addSubview(tableview)
         tableview.snp.makeConstraints { m in
             m.bottom.left.right.equalToSuperview()
@@ -32,9 +32,9 @@ class DarkVC: BasicViewController {
     }
     
     func setupMode(_ mode: UIUserInterfaceStyle) {
-        let m1 = DarkModel(title: "跟随系统", isSelect: mode == .unspecified)
-        let m2 = DarkModel(title: "浅色", isSelect: mode == .light)
-        let m3 = DarkModel(title: "深色", isSelect: mode == .dark)
+        let m1 = DarkModel(title: L10n.Localizable.autoSystem, isSelect: mode == .unspecified)
+        let m2 = DarkModel(title: L10n.Localizable.light, isSelect: mode == .light)
+        let m3 = DarkModel(title: L10n.Localizable.dark, isSelect: mode == .dark)
         dataList = [m1, m2, m3]
         tableview.reloadData()
     }
