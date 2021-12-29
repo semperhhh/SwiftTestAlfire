@@ -21,17 +21,17 @@
 		<key>HandyJSON.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>17</integer>
+			<integer>14</integer>
 		</dict>
 		<key>Kingfisher.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>15</integer>
 		</dict>
 		<key>MJRefresh.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>13</integer>
 		</dict>
 		<key>Pods-SwiftTestAlfire-SwiftTestAlfireUITests.xcscheme</key>
 		<dict>
@@ -78,12 +78,12 @@
 		<key>SDCycleScrollView.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>16</integer>
+			<integer>17</integer>
 		</dict>
 		<key>SDWebImage.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>12</integer>
 		</dict>
 		<key>SnapKit.xcscheme</key>
 		<dict>
@@ -95,7 +95,7 @@
 		<key>SwiftGen.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>18</integer>
 		</dict>
 		<key>SwiftLint.xcscheme</key>
 		<dict>
@@ -107,7 +107,7 @@
 		<key>SwiftyJSON.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>16</integer>
 		</dict>
 		<key>ZPHSuppleKit.xcscheme</key>
 		<dict>

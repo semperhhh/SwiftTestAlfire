@@ -36,6 +36,7 @@ class MusicCollectionViewCell: UICollectionViewCell {
             m.left.equalTo(8)
             m.right.equalTo(-8)
         }
+        imgView.asAvatarOfAutoLayout(corners: .topLeft, radius: 10)
     }
     
     required init?(coder: NSCoder) {
@@ -55,7 +56,7 @@ class MusicCollectionViewCell: UICollectionViewCell {
     lazy var imgView: UIImageView = {
         let v = UIImageView()
         v.backgroundColor = .random
-        v.asAvatar()
+//        v.asAvatar()
         return v
     }()
 }

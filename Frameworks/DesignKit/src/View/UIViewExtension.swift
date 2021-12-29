@@ -28,7 +28,7 @@ public extension UIView {
     }
     
     func asAvatarOfAutoLayout(corners: UIRectCorner, radius: CGFloat) {
-        self.superview?.layoutIfNeeded()
+        self.layoutIfNeeded()
         self.asAvatar(corners: corners, radius: radius)
     }
 }
