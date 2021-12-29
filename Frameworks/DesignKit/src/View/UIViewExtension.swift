@@ -20,10 +20,15 @@ public extension UIView {
     /// - Parameters:
     ///   - corners: 角
     ///   - radius: 大小
-    func asAvatar(corners: UIRectCorner, rect: CGSize, radius: CGFloat) {
-        let path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: rect.width, height: rect.height), byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+    func asAvatar(corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height), byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         let shape = CAShapeLayer()
         shape.path = path.cgPath
         layer.mask = shape
+    }
+    
+    func asAvatarOfAutoLayout(corners: UIRectCorner, radius: CGFloat) {
+        self.superview?.layoutIfNeeded()
+        self.asAvatar(corners: corners, radius: radius)
     }
 }
